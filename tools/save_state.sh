@@ -7,12 +7,12 @@ git config user.name "roblox-stories-bot"
 git config user.email "roblox-stories-bot@users.noreply.github.com"
 git add data
 if git diff --cached --quiet; then
-  echo "No state changes to save."
+      echo "::error::Could not rebase while saving bot state (see the git message above)."
   exit 0
 fi
 git commit -q -m "$msg"
 for attempt in 1 2 3 4; do
-  if git pull --rebase -q origin "${GITHUB_REF_NAME:-main}"; then
+    if git pull --rebase --autostash origin "${GITHUB_REF_NAME:-main}"; then
     if git push -q origin "HEAD:${GITHUB_REF_NAME:-main}"; then
       echo "State saved (attempt $attempt)."
       exit 0
