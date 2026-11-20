@@ -1,1 +1,14 @@
-{"version": 1, "videos": []}
+{
+  "version": 1,
+  "videos": [
+    {
+      "id": "20261120-212404-mood-hats",
+      "title": "Mood Hats 🎩",
+      "rule": "Everyone wears a hat that shows their mood, and it never changes.",
+      "tag": "vid-20261120-212404-mood-hats",
+      "duration": 43.63,
+      "status": "queued",
+      "created": "2026-11-20T22:09+05:30"
+    }
+  ]
+}
