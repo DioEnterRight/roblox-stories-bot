@@ -28,7 +28,7 @@ publish:
   instagram_max_attempts: 2
   # youtube_mode: api = upload automatically (Google audit decides if it stays private), manual = you get an
   # issue with the file + title, off = skip. Start with manual until the YouTube API audit is approved.
-  youtube_mode: manual
+  youtube_mode: api
   youtube_max_attempts: 2
   hashtags_max: 5
 
