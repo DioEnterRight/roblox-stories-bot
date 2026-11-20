@@ -1,0 +1,7 @@
+node_modules/
+models/
+out/
+.env
+client_secret*.json
+__pycache__/
+*.pyc

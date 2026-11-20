@@ -1,0 +1,91 @@
+name: Make video
+
+on:
+  schedule:
+    - cron: "33 22 * * *"   # every day ~04:03 India time (GitHub may run it a few minutes late)
+  workflow_dispatch:
+    inputs:
+      test:
+        description: "Test mode: no LLM key used, nothing queued, builds a sample story and shows preview pictures (untick to make a real video)"
+        type: boolean
+        default: true
+      render:
+        description: "Test mode only: also render the full sample MP4 (adds about 1 hour)"
+        type: boolean
+        default: false
+
+concurrency:
+  group: roblox-stories-bot
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  make:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 300   # CPU render of a 40 s 3D video is the slow step (about 40-100 min)
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TEST: ${{ github.event_name == 'workflow_dispatch' && inputs.test }}
+      RENDER: ${{ github.event_name == 'workflow_dispatch' && inputs.render }}
+      CHROME: /usr/bin/google-chrome
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: Cache voice model
+        uses: actions/cache@v4
+        with:
+          path: models
+          key: kokoro-v1.0-int8
+
+      - name: Install Python packages + voice model
+        run: |
+          pip install -q -r requirements.txt
+          python -m pipeline.fetch_models
+
+      - name: Install Node packages
+        run: npm ci
+
+      - name: Start FreeLLMAPI inside this job
+        if: env.TEST != 'true'
+        env:
+          FREELLMAPI_KEYS: ${{ secrets.FREELLMAPI_KEYS }}
+        run: tools/start_freellmapi.sh
+
+      - name: Make the video
+        run: |
+          if [ "$TEST" = "true" ]; then
+            if [ "$RENDER" = "true" ]; then python -m pipeline.produce --test --render; else python -m pipeline.produce --test; fi
+          else
+            python -m pipeline.produce --release
+          fi
+
+      - name: Show me the test video
+        if: env.TEST == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-output
+          path: |
+            out/*/preview/*
+            out/*/final.mp4
+            out/*/story.json
+          retention-days: 3
+
+      - name: Save memory (history, token usage)
+        if: always() && env.TEST != 'true'
+        run: tools/save_state.sh "data $(date -u +%F)"

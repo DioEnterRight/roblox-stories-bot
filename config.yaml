@@ -1,0 +1,40 @@
+# ============================================================
+#  ROBLOX STORIES BOT SETTINGS  -  the only file you normally edit
+# ============================================================
+
+# Emergency stop. Set to true and nothing gets made or posted.
+paused: false
+
+story:
+  min_beats: 12           # beats = sentences (shouts count); 14-16 is the sweet spot
+  max_beats: 18
+  min_words: 115          # spoken words; measured ~3.5 words/second incl. pauses = 33-46 s
+  max_words: 160
+  min_sec: 30             # hard limit on the real voice length (checked after the voice is made)
+  max_sec: 48
+  hook_style: aerial      # aerial = first beat is the town_overview flyover while the rule is spoken
+                          # (matches your reference Shorts); anything else = no forced aerial shot
+
+cuts:
+  target_sec: 1.8         # a new camera angle about every 1.8 s (your references measure 1.2-1.6 s)
+  min_sec: 1.0            # shorter windows are merged into a neighbour (hard engine limit: every shot 1.0-3.5 s)
+
+voice:
+  narrator: af_heart      # Kokoro voice measured closest to the reference narrator
+  shout: am_michael       # contrasting voice for one-word climax shouts
+
+publish:
+  instagram: true
+  instagram_max_attempts: 2
+  # youtube_mode: api = upload automatically (Google audit decides if it stays private), manual = you get an
+  # issue with the file + title, off = skip. Start with manual until the YouTube API audit is approved.
+  youtube_mode: manual
+  youtube_max_attempts: 2
+  hashtags_max: 5
+
+disclosure:
+  youtube_synthetic: false        # stylised 3D, not photoreal
+  instagram_ai_label: true        # the narrator is a synthetic voice
+
+# Finished videos to keep waiting in Releases (the daily run makes one when below this).
+buffer: 1

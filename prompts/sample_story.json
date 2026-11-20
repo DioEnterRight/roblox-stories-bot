@@ -1,0 +1,23 @@
+{
+  "title": "Loudest Mayor 📢",
+  "rule": "The loudest kid in town becomes mayor for a day.",
+  "description": "In this town the loudest kid rules. I am the quietest kid there is.",
+  "hashtags": ["#roblox", "#robloxstory", "#story", "#storytime"],
+  "beats": [
+    {"text": "In this town, the loudest kid becomes the mayor for a day."},
+    {"text": "Every morning in the park, everyone shouts at the sky as hard as they can."},
+    {"text": "And every single day, the same kid wins. Rocky, the kid with the megaphone voice."},
+    {"text": "I'm Leo, the quietest kid in school, so nobody ever hears my name."},
+    {"text": "Rocky's first rule as mayor: candy for loud kids, nothing for quiet kids."},
+    {"text": "So my little sister Mia and I made a plan to beat him."},
+    {"text": "On contest day, Rocky took the biggest breath of his life."},
+    {"text": "He screamed so hard that his voice cracked, and then it was gone."},
+    {"text": "The principal said the next loudest kid wins. Nobody made a sound."},
+    {"text": "Then Mia pointed at me, and the whole crowd turned."},
+    {"text": "LEO!", "shout": true},
+    {"text": "IS!", "shout": true},
+    {"text": "MAYOR!", "shout": true},
+    {"text": "My first law: free candy for every quiet kid in town."},
+    {"text": "But this morning, Rocky whispered one sentence in my ear, and I heard every word."}
+  ]
+}
