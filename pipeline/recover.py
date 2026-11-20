@@ -34,3 +34,6 @@ def main():
         log(f"Re-queued {tag}: {meta['title']}")
     save_history(history)
 
+
+if __name__ == "__main__":
+    main()
