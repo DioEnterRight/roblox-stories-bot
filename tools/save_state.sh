@@ -7,19 +7,20 @@ git config user.name "roblox-stories-bot"
 git config user.email "roblox-stories-bot@users.noreply.github.com"
 git add data
 if git diff --cached --quiet; then
-      echo "::error::Could not rebase while saving bot state (see the git message above)."
+  echo "No state changes to save."
   exit 0
 fi
 git commit -q -m "$msg"
 for attempt in 1 2 3 4; do
-    if git pull --rebase --autostash origin "${GITHUB_REF_NAME:-main}"; then
+  # --autostash: the render step leaves other modified files (e.g. the current story) that must not block the rebase.
+  if git pull --rebase --autostash origin "${GITHUB_REF_NAME:-main}"; then
     if git push -q origin "HEAD:${GITHUB_REF_NAME:-main}"; then
       echo "State saved (attempt $attempt)."
       exit 0
     fi
   else
     git rebase --abort 2>/dev/null || true
-    echo "::error::Rebase conflict while saving bot state. Someone edited data/ at the same time."
+    echo "::error::Could not rebase while saving bot state (see the git message above)."
     exit 1
   fi
   sleep $((attempt * 5))
