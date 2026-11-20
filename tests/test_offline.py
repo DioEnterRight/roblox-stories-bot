@@ -100,3 +100,11 @@ def test_llm_check_fails_fast_with_plain_message(monkeypatch):
     with pytest.raises(SystemExit) as e:
         llm.check()
     assert "Cannot reach FreeLLMAPI" in str(e.value)
+
+
+def test_workflows_run_scripts_through_bash():
+    """Windows git drops the executable bit, so a bare `tools/x.sh` fails with Permission denied on GitHub."""
+    for wf in (ROOT / ".github" / "workflows").glob("*.yml"):
+        for line in wf.read_text(encoding="utf-8").splitlines():
+            if "tools/" in line and ".sh" in line:
+                assert "bash tools/" in line, (wf.name, line)

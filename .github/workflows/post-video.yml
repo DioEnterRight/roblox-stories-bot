@@ -45,4 +45,4 @@ jobs:
       - name: Save memory
         if: always()
         run: |
-          tools/save_state.sh "posted $(date -u +%F)"
+          bash tools/save_state.sh "posted $(date -u +%F)"

@@ -21,7 +21,7 @@ gets the same free provider keys from a secret instead. Time needed: about 40 mi
 |---|---|---|
 | GitHub account | github.com | free |
 | Git for Windows | Part 1 | free |
-| 3 or more free provider API keys (Google, Groq, Cerebras, Mistral, NVIDIA, OpenRouter ...) | Part 2 | free |
+| 2 or more free provider API keys (Google, Groq, OpenRouter, NVIDIA ...) | Part 2 | free |
 | Instagram Professional account + Facebook Page + Meta developer app | Part 5 | free |
 | YouTube channel | Part 6 (optional at the start) | free |
 
@@ -55,21 +55,22 @@ gets the same free provider keys from a secret instead. Time needed: about 40 mi
 
 ## PART 2: Get your free provider keys
 
-FreeLLMAPI only routes to free providers; each one needs your own free key. Make **at least 3**, more is better
+FreeLLMAPI only routes to free providers; each one needs your own key. **Rule: if a site asks for a credit card or a
+payment, stop and skip that provider.** Free is only free if it asks for no money. Make **at least 2**, more is better
 (when one provider is busy FreeLLMAPI jumps to the next). If you already have keys saved somewhere (a notes file, the
-provider's website), use those. Each site: sign up, click the "API keys" page, click "Create key", copy it.
+provider's website), use those. Each site: sign up, open the "API keys" page, click "Create key", copy it.
 
-| `platform` name (use exactly this) | where to make the key `[Likely, screens change]` |
+| `platform` name (use exactly this) | where to make the key `[Likely: sites change, check it asks no card]` |
 |---|---|
-| `google` | https://aistudio.google.com/apikey |
+| `google` (start with this one) | https://aistudio.google.com/apikey |
 | `groq` | https://console.groq.com/keys |
-| `cerebras` | https://cloud.cerebras.ai (API Keys) |
-| `mistral` | https://console.mistral.ai (API keys) |
-| `nvidia` | https://build.nvidia.com (profile > API keys) |
-| `openrouter` | https://openrouter.ai/keys |
+| `openrouter` | https://openrouter.ai/keys (only models ending in `:free` cost nothing) |
+| `nvidia` | https://build.nvidia.com (profile > API keys; may ask phone verification) |
 
-Other platform names exist (`cohere`, `cloudflare`, `huggingface`, `zhipu`, `kilo`, `llm7` ...). The six above are the
-simplest. Copy each key into a private Notepad.
+Not in this list on purpose: `cerebras` (its free tier ended in 2026, now needs a payment method) and `mistral` (needs
+phone verification and data-training opt-in, and may show as paid for you). Skip any provider that shows a price.
+Other platform names exist (`cohere`, `huggingface`, `kilo`, `llm7` ...). Use them only if their site shows a real free
+plan without a card. Copy each key into a private Notepad.
 
 ---
 
@@ -78,9 +79,9 @@ simplest. Copy each key into a private Notepad.
 1. In Notepad write ONE line like this, with your real keys. Every key needs a different `label`. No line breaks,
    no comma after the last item, straight quotes `"` only:
    ```
-   [{"platform":"google","key":"AIza...","label":"google1"},{"platform":"groq","key":"gsk_...","label":"groq1"},{"platform":"cerebras","key":"csk-...","label":"cerebras1"}]
+   [{"platform":"google","key":"AIza...","label":"google1"},{"platform":"groq","key":"gsk_...","label":"groq1"},{"platform":"openrouter","key":"sk-or-...","label":"openrouter1"}]
    ```
-   Two keys from the same provider: two items with labels `groq1` and `groq2`.
+   Two keys from the same provider (two Google accounts, for example): two items with labels `google1` and `google2`.
 2. Open your repo on GitHub > **Settings** > **Secrets and variables** (left) > **Actions** > **New repository secret**.
 3. Name: `FREELLMAPI_KEYS`  (exactly). Secret: paste the whole line. Click **Add secret**.
 
@@ -94,7 +95,7 @@ creates its own and the bot reads it automatically.
 1. Repo > **Actions** tab > left list **Test FreeLLMAPI connection** > **Run workflow** (right) > green **Run workflow**.
 2. Wait about 2 minutes, refresh, click the run, click the job **ping**.
 3. Good result: the step **Start FreeLLMAPI inside this job** says `FreeLLMAPI is running inside this job with 3 provider
-   key(s)` and the last step ends with `FreeLLMAPI answered: {"ok": true}`.
+   key(s) (or however many you added)` and the last step ends with `FreeLLMAPI answered: {"ok": true}`.
 4. Red? Click the red step and read the last lines:
    - `FREELLMAPI_KEYS is not valid JSON`: fix the line in Part 3 (usually a missing quote or a trailing comma), save
      the secret again.

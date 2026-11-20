@@ -65,7 +65,7 @@ jobs:
         if: env.TEST != 'true'
         env:
           FREELLMAPI_KEYS: ${{ secrets.FREELLMAPI_KEYS }}
-        run: tools/start_freellmapi.sh
+        run: bash tools/start_freellmapi.sh
 
       - name: Make the video
         run: |
@@ -88,4 +88,4 @@ jobs:
 
       - name: Save memory (history, token usage)
         if: always() && env.TEST != 'true'
-        run: tools/save_state.sh "data $(date -u +%F)"
+        run: bash tools/save_state.sh "data $(date -u +%F)"

@@ -16,6 +16,6 @@ jobs:
       - name: Start FreeLLMAPI inside this job
         env:
           FREELLMAPI_KEYS: ${{ secrets.FREELLMAPI_KEYS }}
-        run: tools/start_freellmapi.sh
+        run: bash tools/start_freellmapi.sh
       - name: Ask FreeLLMAPI one tiny question
         run: python -m pipeline.ping
