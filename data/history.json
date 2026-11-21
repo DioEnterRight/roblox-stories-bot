@@ -7,12 +7,14 @@
       "rule": "Everyone wears a hat that shows their mood, and it never changes.",
       "tag": "vid-20261120-212404-mood-hats",
       "duration": 43.63,
-      "status": "queued",
+      "status": "published",
       "created": "2026-11-20T22:09+05:30",
       "ig_media_id": "17955373947341812",
       "ig_link": "https://www.instagram.com/reel/Df-W-WhIEjN/",
       "ig_state": "posted",
-      "yt_attempts": 1
+      "yt_attempts": 2,
+      "yt_state": "manual_notified",
+      "published_at": "2026-11-21T16:09+05:30"
     }
   ]
 }
