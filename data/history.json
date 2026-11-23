@@ -22,12 +22,14 @@
       "rule": "Your backpack grows bigger every time you hold a secret.",
       "tag": "vid-20261122-044344-heavy-backpacks",
       "duration": 44.35,
-      "status": "queued",
+      "status": "published",
       "created": "2026-11-22T06:15+05:30",
       "ig_media_id": "18080750045762315",
       "ig_link": "https://www.instagram.com/reel/DgCnFVDAtAi/",
       "ig_state": "posted",
-      "yt_attempts": 1
+      "yt_attempts": 2,
+      "yt_state": "manual_notified",
+      "published_at": "2026-11-23T16:24+05:30"
     }
   ]
 }
