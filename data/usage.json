@@ -1,7 +1,7 @@
 {
   "2026-11": {
-    "calls": 6,
-    "prompt_tokens": 5911,
-    "completion_tokens": 2199
+    "calls": 9,
+    "prompt_tokens": 8492,
+    "completion_tokens": 5692
   }
 }
