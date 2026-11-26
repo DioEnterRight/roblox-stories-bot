@@ -147,6 +147,33 @@
       "tag": "vid-20261127-013625-en-product-launch",
       "status": "queued",
       "created": "2026-11-27T02:59+05:30"
+    },
+    {
+      "id": "20261127-030123-en-product-launch",
+      "title": "AI‑Toast: The Future of Breakfast 🚀",
+      "topic": "product launch",
+      "canonical_en": "He announces a breakthrough AI tool, but the 'AI' is a toaster.",
+      "language": "en",
+      "format": "ceo",
+      "category": "product launch",
+      "hook_line": "I built an AI platform that runs breakfast while I sleep.",
+      "duration": 18.84,
+      "look": {
+        "main": "apartment",
+        "main_mood": "night",
+        "music_style": "keys",
+        "accent": "#5CE1FF",
+        "locations": [
+          "apartment",
+          "cafe",
+          "nook"
+        ]
+      },
+      "critic_score": 7.0,
+      "studio_score": 5.9,
+      "tag": "vid-20261127-030123-en-product-launch",
+      "status": "queued",
+      "created": "2026-11-27T04:16+05:30"
     }
   ],
   "missed_slots": [
