@@ -89,6 +89,32 @@
       "tag": "vid-20261126-211710-hi-morning-routine",
       "status": "queued",
       "created": "2026-11-26T23:16+05:30"
+    },
+    {
+      "id": "20261126-231827-hi-morning-routine",
+      "title": "Morning Meditation ya Meme Scroll? 🌅",
+      "topic": "morning routine",
+      "canonical_en": "He claims his sunrise meditation fuels a billion-dollar vision, but he's just scrolling memes.",
+      "language": "hi",
+      "format": "ceo",
+      "category": "morning routine",
+      "hook_line": "main 4:30 am par uthta hoon, power meditation se empire align karta hoon",
+      "duration": 32.94,
+      "look": {
+        "main": "street",
+        "main_mood": "evening",
+        "music_style": "lofi",
+        "accent": "#FF9D2E",
+        "locations": [
+          "street",
+          "nook"
+        ]
+      },
+      "critic_score": 7.0,
+      "studio_score": 5.5,
+      "tag": "vid-20261126-231827-hi-morning-routine",
+      "status": "queued",
+      "created": "2026-11-27T01:34+05:30"
     }
   ],
   "missed_slots": [
