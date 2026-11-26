@@ -18,26 +18,18 @@
       "language": "en",
       "video_id": "20261126-191321-en-ai-startup",
       "created": "2026-11-26T21:14+05:30"
-    }
-  ],
-  "backlog": [
+    },
     {
       "canonical_en": "He claims his sunrise meditation fuels a billion-dollar vision, but he's just scrolling memes.",
       "category": "morning routine",
       "hook": "I start my day at 4:30 AM with a power meditation that aligns my empire.",
-      "setup": "Morning meditation while visualizing a multi‑billion valuation.",
       "twist": "Actually I'm just watching cat memes on my phone.",
-      "visual_gag": "Phone screen showing a cat meme overlayed with a headset.",
-      "scores": {
-        "funny": 7,
-        "relatable": 6,
-        "originality": 7,
-        "visual": 8,
-        "twist": 7
-      },
-      "language": null,
-      "added": "2026-11-26T19:11+05:30"
-    },
+      "language": "hi",
+      "video_id": "20261126-211710-hi-morning-routine",
+      "created": "2026-11-26T23:16+05:30"
+    }
+  ],
+  "backlog": [
     {
       "canonical_en": "He announces a breakthrough AI tool, but the 'AI' is a toaster.",
       "category": "product launch",

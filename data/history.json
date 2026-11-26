@@ -63,6 +63,32 @@
       "ig_link": "https://www.instagram.com/reel/DgNpgNrOKIA/",
       "ig_state": "posted",
       "published_at": "2026-11-26T23:02+05:30"
+    },
+    {
+      "id": "20261126-211710-hi-morning-routine",
+      "title": "Sunrise Meditation CEO Vibes 😎",
+      "topic": "Morning Routine",
+      "canonical_en": "He claims his sunrise meditation fuels a billion-dollar vision, but he's just scrolling memes.",
+      "language": "hi",
+      "format": "ceo",
+      "category": "morning routine",
+      "hook_line": "main 4:30 baje uthta hoon power meditation se empire align karta hoon",
+      "duration": 27.65,
+      "look": {
+        "main": "cafe",
+        "main_mood": "golden",
+        "music_style": "corporate",
+        "accent": "#FFD400",
+        "locations": [
+          "cafe",
+          "nook"
+        ]
+      },
+      "critic_score": 8.0,
+      "studio_score": 7.0,
+      "tag": "vid-20261126-211710-hi-morning-routine",
+      "status": "queued",
+      "created": "2026-11-26T23:16+05:30"
     }
   ],
   "missed_slots": [
