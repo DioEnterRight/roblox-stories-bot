@@ -118,8 +118,13 @@
       "critic_score": 7.0,
       "studio_score": 5.5,
       "tag": "vid-20261126-231827-hi-morning-routine",
-      "status": "queued",
-      "created": "2026-11-27T01:34+05:30"
+      "status": "published",
+      "created": "2026-11-27T01:34+05:30",
+      "slot": "2026-11-27 04:30",
+      "ig_media_id": "18079341992756667",
+      "ig_link": "https://www.instagram.com/reel/DgOPU_kM3Wy/",
+      "ig_state": "posted",
+      "published_at": "2026-11-27T04:33+05:30"
     },
     {
       "id": "20261127-013625-en-product-launch",
