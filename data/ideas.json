@@ -1,0 +1,135 @@
+{
+  "version": 1,
+  "ideas": [
+    {
+      "canonical_en": "He claims a VC just signed a term sheet, but it's actually a pizza coupon.",
+      "category": "investors and funding",
+      "hook": "Just closed a seed round with a top‑tier VC—valuation's through the roof.",
+      "twist": "The term sheet is a pizza coupon from a local shop.",
+      "language": "en",
+      "video_id": "20261126-173738-en-investors-and-funding",
+      "created": "2026-11-26T19:11+05:30"
+    }
+  ],
+  "backlog": [
+    {
+      "canonical_en": "He claims his sunrise meditation fuels a billion-dollar vision, but he's just scrolling memes.",
+      "category": "morning routine",
+      "hook": "I start my day at 4:30 AM with a power meditation that aligns my empire.",
+      "setup": "Morning meditation while visualizing a multi‑billion valuation.",
+      "twist": "Actually I'm just watching cat memes on my phone.",
+      "visual_gag": "Phone screen showing a cat meme overlayed with a headset.",
+      "scores": {
+        "funny": 7,
+        "relatable": 6,
+        "originality": 7,
+        "visual": 8,
+        "twist": 7
+      },
+      "language": null,
+      "added": "2026-11-26T19:11+05:30"
+    },
+    {
+      "canonical_en": "He announces a breakthrough AI tool, but the 'AI' is a toaster.",
+      "category": "product launch",
+      "hook": "Launching our AI‑driven platform that will automate every task.",
+      "setup": "Teasing AI product that will change industry.",
+      "twist": "It's just a toaster I named 'AI‑Toast'.",
+      "visual_gag": "Toaster with a small screen showing 'AI' logo.",
+      "scores": {
+        "funny": 7,
+        "relatable": 6,
+        "originality": 7,
+        "visual": 7,
+        "twist": 7
+      },
+      "language": null,
+      "added": "2026-11-26T19:11+05:30"
+    },
+    {
+      "canonical_en": "He boasts about scaling the team, but his only employee is a rubber chicken.",
+      "category": "team and hiring",
+      "hook": "We're hiring top talent who can pivot faster than the market.",
+      "setup": "Announcing aggressive hiring for growth.",
+      "twist": "My only employee is a rubber chicken named 'Pivot'.",
+      "visual_gag": "Rubber chicken with a name tag on a desk.",
+      "scores": {
+        "funny": 7,
+        "relatable": 5,
+        "originality": 7,
+        "visual": 7,
+        "twist": 7
+      },
+      "language": null,
+      "added": "2026-11-26T19:11+05:30"
+    },
+    {
+      "canonical_en": "He says his office has 5‑star views, but he's on a couch in a laundry room.",
+      "category": "the office",
+      "hook": "My office overlooks the skyline—clouds of opportunity everywhere.",
+      "setup": "Describing high‑rise office with panoramic view.",
+      "twist": "I'm actually on a couch in the apartment laundry room.",
+      "visual_gag": "Couch with laptop, laundry machines in background, window showing brick wall.",
+      "scores": {
+        "funny": 6,
+        "relatable": 7,
+        "originality": 6,
+        "visual": 7,
+        "twist": 6
+      },
+      "language": null,
+      "added": "2026-11-26T19:11+05:30"
+    },
+    {
+      "canonical_en": "He says his board meetings are packed, but the board is just his houseplants.",
+      "category": "meetings",
+      "hook": "Our weekly boardroom is always full of visionary leaders.",
+      "setup": "Board meeting with key stakeholders discussing growth.",
+      "twist": "The only attendees are two succulents.",
+      "visual_gag": "Succulents in tiny chairs around a conference table.",
+      "scores": {
+        "funny": 6,
+        "relatable": 6,
+        "originality": 6,
+        "visual": 7,
+        "twist": 6
+      },
+      "language": null,
+      "added": "2026-11-26T19:11+05:30"
+    },
+    {
+      "canonical_en": "He claims his follower count is soaring, but the screen shows 0 likes.",
+      "category": "social media flexing",
+      "hook": "My LinkedIn followers exploded overnight—thousands of CEOs follow me.",
+      "setup": "Talking about viral LinkedIn growth.",
+      "twist": "My latest post has zero likes and zero comments.",
+      "visual_gag": "Phone screen with LinkedIn post showing 0 likes.",
+      "scores": {
+        "funny": 6,
+        "relatable": 5,
+        "originality": 6,
+        "visual": 6,
+        "twist": 6
+      },
+      "language": null,
+      "added": "2026-11-26T19:11+05:30"
+    },
+    {
+      "canonical_en": "He boasts about payroll automation, but his paycheck is a doodle of a dollar sign.",
+      "category": "salary and payday",
+      "hook": "Our payroll system runs itself, paying every team member on time.",
+      "setup": "Explaining automated salary disbursement.",
+      "twist": "My last paycheck was a doodle of a dollar sign on a napkin.",
+      "visual_gag": "Napkin with hand‑drawn dollar sign.",
+      "scores": {
+        "funny": 5,
+        "relatable": 6,
+        "originality": 5,
+        "visual": 6,
+        "twist": 5
+      },
+      "language": null,
+      "added": "2026-11-26T19:11+05:30"
+    }
+  ]
+}

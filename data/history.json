@@ -1,6 +1,33 @@
 {
   "version": 2,
-  "videos": [],
+  "videos": [
+    {
+      "id": "20261126-173738-en-investors-and-funding",
+      "title": "Seed Round Surprise 🍕",
+      "topic": "investors and funding",
+      "canonical_en": "He claims a VC just signed a term sheet, but it's actually a pizza coupon.",
+      "language": "en",
+      "format": "ceo",
+      "category": "investors and funding",
+      "hook_line": "Just closed a seed round with a toptier VC—valuation's through the roof.",
+      "duration": 18.9,
+      "look": {
+        "main": "boardroom",
+        "main_mood": "morning",
+        "music_style": "suspense",
+        "accent": "#FFD400",
+        "locations": [
+          "boardroom",
+          "apartment"
+        ]
+      },
+      "critic_score": 8.0,
+      "studio_score": 7.5,
+      "tag": "vid-20261126-173738-en-investors-and-funding",
+      "status": "queued",
+      "created": "2026-11-26T19:11+05:30"
+    }
+  ],
   "missed_slots": [
     "2026-11-26 16:30"
   ]
