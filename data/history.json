@@ -31,6 +31,33 @@
       "ig_link": "https://www.instagram.com/reel/DgNQI-Yz0S1/",
       "ig_state": "posted",
       "published_at": "2026-11-26T19:21+05:30"
+    },
+    {
+      "id": "20261126-191321-en-ai-startup",
+      "title": "AI Copywriter CEO 🤖",
+      "topic": "AI startup",
+      "canonical_en": "He claims his AI writes the scripts, but it’s just ChatGPT on his phone",
+      "language": "en",
+      "format": "ceo",
+      "category": "the AI startup trend",
+      "hook_line": "Our proprietary AI writes 100% of our copy in seconds.",
+      "duration": 20.05,
+      "look": {
+        "main": "apartment",
+        "main_mood": "golden",
+        "music_style": "funk",
+        "accent": "#FFD400",
+        "locations": [
+          "apartment",
+          "street",
+          "cafe"
+        ]
+      },
+      "critic_score": 7.0,
+      "studio_score": 7.0,
+      "tag": "vid-20261126-191321-en-ai-startup",
+      "status": "queued",
+      "created": "2026-11-26T21:14+05:30"
     }
   ],
   "missed_slots": [
