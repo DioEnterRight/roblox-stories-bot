@@ -24,8 +24,13 @@
       "critic_score": 8.0,
       "studio_score": 7.5,
       "tag": "vid-20261126-173738-en-investors-and-funding",
-      "status": "queued",
-      "created": "2026-11-26T19:11+05:30"
+      "status": "published",
+      "created": "2026-11-26T19:11+05:30",
+      "slot": "2026-11-26 19:19 manual",
+      "ig_media_id": "18035682023886930",
+      "ig_link": "https://www.instagram.com/reel/DgNQI-Yz0S1/",
+      "ig_state": "posted",
+      "published_at": "2026-11-26T19:21+05:30"
     }
   ],
   "missed_slots": [
