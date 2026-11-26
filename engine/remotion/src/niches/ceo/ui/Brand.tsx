@@ -21,7 +21,7 @@ export const BrandLayer: React.FC<{ reel: ReelSpec }> = ({ reel }) => {
   return (
     <AbsoluteFill style={{ pointerEvents: "none" }}>
       {b.corner && (
-        <div style={{ position: "absolute", top: 70, right: 36, padding: "8px 26px", borderRadius: 40, background: "rgba(0,0,0,0.5)",
+        <div style={{ position: "absolute", top: 70, right: 100, padding: "8px 26px", borderRadius: 40, background: "rgba(0,0,0,0.5)",
                       color: "#fff", fontFamily: FONTS.caption, fontSize: 40, letterSpacing: 1 }}>{b.corner}</div>
       )}
       {o && k >= 0 && (
