@@ -1,0 +1,48 @@
+{
+  "id": "ceo",
+  "palette": {
+    "bg": "#120E18"
+  },
+  "fonts": {},
+  "captions": {
+    "mode": "karaoke",
+    "leadSec": 0,
+    "groupBy": "phrase",
+    "maxWords": 6,
+    "gapSplitSec": 0.35,
+    "holdSec": 0.25,
+    "params": {
+      "centerY": 1385,
+      "fontSize": 96,
+      "maxWidth": 900,
+      "lineGap": 1.02,
+      "accent": "#FFD400",
+      "outline": "#111111"
+    }
+  },
+  "transitions": {
+    "defaultIn": { "type": "cut" },
+    "defaultOut": { "type": "cut" }
+  },
+  "post": {
+    "exposure": 1.04,
+    "vignette": 0.6,
+    "vignetteRadius": 0.38,
+    "ca": 3.0,
+    "grain": 0.0015,
+    "sat": 1.0,
+    "contrast": 1.06,
+    "split": 0.03,
+    "bloom": 0.8,
+    "bloomThreshold": 0.92,
+    "bloomRadius": 0.72
+  },
+  "audio": {
+    "limiterDbfs": -4.6,
+    "lufs": -14,
+    "truePeakMax": -1.0
+  },
+  "qa": {
+    "staticMaxSec": 1.2
+  }
+}

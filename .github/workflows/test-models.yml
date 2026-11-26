@@ -1,0 +1,23 @@
+name: Test free models
+
+on:
+  workflow_dispatch: {}      # one tiny request per role: proves FREELLMAPI_KEYS works and shows which models each role uses
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q pyyaml
+      - name: Start FreeLLMAPI
+        env:
+          FREELLMAPI_KEYS: ${{ secrets.FREELLMAPI_KEYS }}
+        run: bash tools/start_freellmapi.sh
+      - run: python -m pipeline.llm --check

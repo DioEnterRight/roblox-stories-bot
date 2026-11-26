@@ -1,0 +1,369 @@
+{
+  "_doc": "The world as the director sees it. Spots = where the CEO stands ([x, y, z], rotY); extras = where a second character can stand ([x, y, z, rotY]); low_ok = a low camera has a clear view (no desk in front); wides = establishing cameras. Must match three/sets/*.tsx. Read by pipeline/compiler.py.",
+  "apartment": {
+    "desc": "the CEO's home office: desk with laptop, big window with the city, couch, 'CEO OF THE MONTH' frame",
+    "moods": [
+      "golden",
+      "night",
+      "morning",
+      "rain",
+      "evening"
+    ],
+    "spots": {
+      "desk": {
+        "at": [-1.6, 0.08, -1.85],
+        "rotY": 0,
+        "desc": "behind his desk, laptop in front of him",
+        "low_ok": false,
+        "extras": [
+          [-0.25, 0, -1.35, -0.7],
+          [-2.95, 0, -1.4, 0.6]
+        ]
+      },
+      "window": {
+        "at": [1.4, 0, -2.55],
+        "rotY": 0,
+        "desc": "in front of the big window, backlit by the city",
+        "low_ok": true,
+        "extras": [
+          [0.25, 0, -2.2, 0.5],
+          [2.55, 0, -2.2, -0.5]
+        ]
+      },
+      "couch": {
+        "at": [2.75, 0.27, -2.2],
+        "rotY": 0,
+        "desc": "sitting on the couch",
+        "low_ok": false,
+        "extras": [
+          [2.0, 0.27, -2.25, 0.35],
+          [3.5, 0.27, -2.25, -0.35]
+        ]
+      },
+      "middle": {
+        "at": [0.35, 0, -1.2],
+        "rotY": 0,
+        "desc": "standing in the middle of the room",
+        "low_ok": true,
+        "extras": [
+          [1.45, 0, -1.4, -0.5],
+          [-0.75, 0, -1.4, 0.5]
+        ]
+      }
+    },
+    "wides": [
+      {
+        "name": "front",
+        "from": [0.4, 2.3, 6.0],
+        "look": [0.3, 1.2, -1.8],
+        "fov": 48
+      },
+      {
+        "name": "corner_r",
+        "from": [3.6, 2.0, 4.6],
+        "look": [-0.6, 1.0, -1.8],
+        "fov": 46
+      },
+      {
+        "name": "corner_l",
+        "from": [-3.4, 2.1, 4.6],
+        "look": [0.8, 1.0, -1.8],
+        "fov": 46
+      },
+      {
+        "name": "low",
+        "from": [0.0, 0.55, 5.0],
+        "look": [0.2, 1.5, -2.4],
+        "fov": 50
+      },
+      {
+        "name": "high",
+        "from": [0.2, 5.2, 5.2],
+        "look": [0.2, 0.4, -1.6],
+        "fov": 46
+      }
+    ],
+    "screen": "laptop",
+    "bounds": {
+      "x": [-4.3, 4.6],
+      "y": [0.35, 5.6],
+      "z_max": 8.5
+    }
+  },
+  "boardroom": {
+    "desc": "a meeting room: long table with EMPTY chairs, a wall chart with the line going down, neon company sign",
+    "moods": [
+      "morning",
+      "golden",
+      "night",
+      "rain",
+      "evening"
+    ],
+    "spots": {
+      "head": {
+        "at": [0.6, 0.1, -2.9],
+        "rotY": 0,
+        "desc": "at the head of the long table, chart behind him",
+        "low_ok": false,
+        "extras": [
+          [-0.8, 0, 0.55, 0.6],
+          [2.0, 0, 0.55, -0.6]
+        ]
+      },
+      "present": {
+        "at": [-1.45, 0, -2.55],
+        "rotY": 0.35,
+        "desc": "presenting beside the wall chart",
+        "low_ok": true,
+        "extras": [
+          [0.6, 0, -2.85, -0.3]
+        ]
+      },
+      "side_l": {
+        "at": [-0.8, 0, 0.55],
+        "rotY": 0.5,
+        "desc": "standing at the near left corner of the table",
+        "low_ok": true,
+        "extras": [
+          [2.0, 0, 0.55, -0.5]
+        ]
+      },
+      "side_r": {
+        "at": [2.0, 0, 0.55],
+        "rotY": -0.5,
+        "desc": "standing at the near right corner of the table",
+        "low_ok": true,
+        "extras": [
+          [-0.8, 0, 0.55, 0.5]
+        ]
+      }
+    },
+    "wides": [
+      {
+        "name": "down_table",
+        "from": [0.6, 1.9, 4.4],
+        "look": [0.6, 1.0, -2.6],
+        "fov": 46
+      },
+      {
+        "name": "corner",
+        "from": [3.6, 2.4, 3.6],
+        "look": [0.0, 1.1, -2.0],
+        "fov": 46
+      },
+      {
+        "name": "left",
+        "from": [-3.2, 1.8, 3.6],
+        "look": [0.8, 1.2, -2.4],
+        "fov": 46
+      },
+      {
+        "name": "high",
+        "from": [0.6, 5.0, 3.8],
+        "look": [0.6, 0.3, -1.4],
+        "fov": 48
+      }
+    ],
+    "screen": "chart",
+    "bounds": {
+      "x": [-4.4, 4.5],
+      "y": [0.35, 5.6],
+      "z_max": 8.5
+    }
+  },
+  "cafe": {
+    "desc": "a cafe he calls his office: counter with a menu board, round tables, laptop and coffee, big window",
+    "moods": [
+      "morning",
+      "golden",
+      "evening",
+      "rain",
+      "night"
+    ],
+    "spots": {
+      "table": {
+        "at": [0.9, 0, -1.8],
+        "rotY": 0,
+        "desc": "at a small table with his laptop and coffee",
+        "low_ok": false,
+        "extras": [
+          [2.05, 0, -1.3, -0.9],
+          [-0.3, 0, -1.4, 0.8]
+        ]
+      },
+      "counter": {
+        "at": [-2.6, 0, -1.65],
+        "rotY": 0,
+        "desc": "at the counter, menu board behind him",
+        "low_ok": true,
+        "extras": [
+          [-1.4, 0, -1.5, -0.5]
+        ]
+      },
+      "window": {
+        "at": [2.4, 0, -2.75],
+        "rotY": 0,
+        "desc": "by the cafe window",
+        "low_ok": true,
+        "extras": [
+          [1.3, 0, -2.6, 0.5]
+        ]
+      }
+    },
+    "wides": [
+      {
+        "name": "front",
+        "from": [0.6, 2.2, 6.0],
+        "look": [0.2, 1.1, -2.0],
+        "fov": 48
+      },
+      {
+        "name": "corner_r",
+        "from": [3.8, 2.0, 4.4],
+        "look": [-0.8, 1.1, -2.0],
+        "fov": 46
+      },
+      {
+        "name": "corner_l",
+        "from": [-3.6, 2.2, 4.4],
+        "look": [1.2, 1.0, -2.0],
+        "fov": 46
+      },
+      {
+        "name": "low",
+        "from": [0.6, 0.6, 4.6],
+        "look": [0.8, 1.4, -2.2],
+        "fov": 50
+      }
+    ],
+    "screen": "laptop",
+    "bounds": {
+      "x": [-4.4, 4.6],
+      "y": [0.35, 5.4],
+      "z_max": 8.5
+    }
+  },
+  "street": {
+    "desc": "a city street: buildings, sidewalk with a bench and streetlights, cars passing in wide shots",
+    "moods": [
+      "golden",
+      "morning",
+      "night",
+      "evening",
+      "rain"
+    ],
+    "spots": {
+      "sidewalk": {
+        "at": [0, 0.12, -0.7],
+        "rotY": 0,
+        "desc": "standing on the sidewalk",
+        "low_ok": true,
+        "extras": [
+          [1.2, 0.12, -0.9, -0.5],
+          [-1.2, 0.12, -0.9, 0.5]
+        ]
+      },
+      "bench": {
+        "at": [1.7, 0.4, -1.75],
+        "rotY": 0,
+        "desc": "sitting on the bench",
+        "low_ok": true,
+        "extras": [
+          [2.45, 0.4, -1.75, -0.3]
+        ]
+      },
+      "door": {
+        "at": [-2.6, 0.12, -1.9],
+        "rotY": 0,
+        "desc": "outside a shop door",
+        "low_ok": true,
+        "extras": [
+          [-1.5, 0.12, -1.6, -0.5]
+        ]
+      },
+      "curb": {
+        "at": [0.9, 0.12, 0.6],
+        "rotY": 0,
+        "desc": "at the edge of the road",
+        "low_ok": true,
+        "extras": [
+          [-0.2, 0.12, 0.5, 0.5]
+        ]
+      }
+    },
+    "wides": [
+      {
+        "name": "across",
+        "from": [0.3, 2.0, 8.5],
+        "look": [0.2, 1.6, -1.8],
+        "fov": 46,
+        "traffic": true
+      },
+      {
+        "name": "low",
+        "from": [0.0, 0.6, 7.2],
+        "look": [0.3, 2.2, -2.0],
+        "fov": 50,
+        "traffic": true
+      },
+      {
+        "name": "high",
+        "from": [0.5, 6.0, 8.0],
+        "look": [0.2, 0.6, -1.0],
+        "fov": 46,
+        "traffic": true
+      },
+      {
+        "name": "side",
+        "from": [5.5, 1.8, 4.0],
+        "look": [-1.0, 1.4, -1.2],
+        "fov": 44
+      }
+    ],
+    "screen": "phone",
+    "bounds": {
+      "x": [-12, 12],
+      "y": [0.35, 8],
+      "z_max": 11
+    }
+  },
+  "nook": {
+    "desc": "his room at night: sofa, floor lamp, window with the moon (or rain)",
+    "moods": [
+      "night",
+      "rain"
+    ],
+    "spots": {
+      "sofa": {
+        "at": [0, 0, -0.35],
+        "rotY": 0,
+        "desc": "in front of the sofa at night",
+        "low_ok": true,
+        "extras": [
+          [1.1, 0, -0.5, -0.4],
+          [-1.1, 0, -0.5, 0.4]
+        ]
+      }
+    },
+    "wides": [
+      {
+        "name": "wide",
+        "from": [0.6, 2.1, 6.4],
+        "look": [0.3, 1.5, -1.5],
+        "fov": 48
+      },
+      {
+        "name": "side",
+        "from": [-2.6, 1.6, 4.8],
+        "look": [0.4, 1.0, -1.0],
+        "fov": 46
+      }
+    ],
+    "screen": "phone",
+    "bounds": {
+      "x": [-4.2, 5],
+      "y": [0.35, 5.5],
+      "z_max": 7.5
+    }
+  }
+}

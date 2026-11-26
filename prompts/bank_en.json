@@ -1,0 +1,113 @@
+{
+  "_doc": "Hand-written skits used ONLY when no free model is reachable (and by test mode). Each is posted at most once.",
+  "scripts": [
+    {
+      "title": "My calendar is fully booked 📅",
+      "description": "Running a company is hard when you are the whole company.",
+      "hashtags": ["#ceo", "#startup", "#relatable", "#comedy", "#hustle"],
+      "topic": "the founder cancels his own meetings",
+      "canonical_en": "A CEO's calendar is full of meetings with himself that he cancels himself",
+      "category": "meetings",
+      "punch_line": 4,
+      "laptop": ["10:00 FOUNDER", "11:00 CANCELLED", "12:00 WARNING"],
+      "lines": [
+        {"text": "Ever since I became my own boss, my calendar has been fully booked.", "emphasis": "booked", "ceo": {"action": "type", "expression": "happy"},
+         "insert": {"device": "laptop", "app": "calendar", "title": "Today", "lines": ["10:00 Meeting with the Founder", "11:00 Founder cancelled", "12:00 HR: warn the Founder"]}},
+        {"text": "At ten I have a meeting with the founder.", "emphasis": "founder", "ceo": {"action": "nod", "expression": "neutral"}},
+        {"text": "At eleven the founder cancels on me.", "emphasis": "cancels", "ceo": {"action": "shake", "expression": "angry"}, "stamp": {"text": "CANCELLED", "color": "red"}},
+        {"text": "At twelve I give the founder a warning.", "emphasis": "warning", "ceo": {"action": "point", "expression": "angry"}},
+        {"text": "Because the founder, the CEO and the intern are all me.", "emphasis": "me", "ceo": {"action": "idle", "expression": "closed"}, "card": {"kind": "role", "text": "CEO, CFO, INTERN"}},
+        {"text": "And honestly, the intern is carrying this company.", "emphasis": "intern", "ceo": {"action": "sad", "expression": "sad"}}
+      ]
+    },
+    {
+      "title": "The 5 a.m. CEO routine ☕",
+      "description": "Discipline is everything. Especially when there is nothing to do.",
+      "hashtags": ["#morningroutine", "#ceo", "#comedy", "#relatable", "#hustle"],
+      "topic": "a 5 a.m. routine for a company that does not exist",
+      "canonical_en": "A founder's strict 5 a.m. routine ends with him back in bed because the company does not exist",
+      "category": "morning routine",
+      "punch_line": 4,
+      "laptop": ["INBOX (0)", "SPAM (412)"],
+      "lines": [
+        {"text": "I wake up at five a.m. because empires don't build themselves.", "emphasis": "empires", "ceo": {"action": "raise", "expression": "happy"}},
+        {"text": "I check my emails before I brush my teeth.", "emphasis": "emails", "ceo": {"action": "scroll", "expression": "neutral", "hold": "phone"},
+         "insert": {"device": "phone", "app": "email", "title": "Inbox", "lines": ["Inbox (0)", "Spam (412)", "Promotions (88)"], "highlight": 0}},
+        {"text": "Black coffee. No sugar. No breaks.", "emphasis": "breaks", "ceo": {"action": "idle", "expression": "sceptic", "hold": "coffee"}},
+        {"text": "By six I am already at my desk.", "emphasis": "desk", "ceo": {"action": "type", "expression": "neutral"}, "card": {"kind": "stat", "label": "TIME", "value": "6:00"}},
+        {"text": "By seven I am back in bed.", "emphasis": "bed", "ceo": {"action": "idle", "expression": "sleepy"}, "stamp": {"text": "BACK TO BED", "color": "blue"}},
+        {"text": "Because there is nothing to do until the company exists.", "emphasis": "exists", "ceo": {"action": "sad", "expression": "closed"}}
+      ]
+    },
+    {
+      "title": "How I manage a big team 🪴",
+      "description": "Leadership is about listening to your team. My team is a great listener.",
+      "hashtags": ["#leadership", "#ceo", "#comedy", "#office", "#relatable"],
+      "topic": "the CEO's whole team is a potted plant",
+      "canonical_en": "A CEO brags about managing his team but the team is a potted plant",
+      "category": "team and hiring",
+      "punch_line": 5,
+      "lines": [
+        {"text": "People ask how I manage such a big team.", "emphasis": "team", "ceo": {"action": "cross", "expression": "happy"}},
+        {"text": "We have a strict no excuses culture.", "emphasis": "excuses", "ceo": {"action": "point", "expression": "sceptic"}},
+        {"text": "Every morning, I give a motivational speech.", "emphasis": "speech", "ceo": {"action": "raise", "expression": "happy"}},
+        {"text": "Then I take feedback from the team.", "emphasis": "feedback", "ceo": {"action": "look", "expression": "neutral"}},
+        {"text": "The team says the speech was amazing.", "emphasis": "amazing", "ceo": {"action": "nod", "expression": "happy"}},
+        {"text": "The team is a plant.", "emphasis": "plant", "ceo": {"action": "idle", "expression": "closed"}, "card": {"kind": "stat", "label": "EMPLOYEES", "value": "1 PLANT"}},
+        {"text": "It still shows up more than I do.", "emphasis": "more", "ceo": {"action": "sad", "expression": "sad"}}
+      ]
+    },
+    {
+      "title": "I finally met an investor 💼",
+      "description": "Pitched my startup. The investor had questions. And dinner.",
+      "hashtags": ["#startup", "#investor", "#comedy", "#desi", "#relatable"],
+      "topic": "the only investor is his dad",
+      "canonical_en": "A founder pitches to an investor who turns out to be his dad",
+      "category": "investors and funding",
+      "punch_line": 4,
+      "lines": [
+        {"text": "This year I finally met an investor.", "emphasis": "investor", "ceo": {"action": "cheer", "expression": "happy"}},
+        {"text": "He asked about my revenue, my team and my product.", "emphasis": "revenue", "ceo": {"action": "idle", "expression": "worried"}, "who": "dad"},
+        {"text": "I said, sir, we are in stealth mode.", "emphasis": "stealth", "ceo": {"action": "cross", "expression": "sceptic"}},
+        {"text": "He said five years of stealth mode is called sleeping.", "emphasis": "sleeping", "ceo": {"action": "idle", "expression": "surprised"}, "who": "dad"},
+        {"text": "The investor was my dad.", "emphasis": "dad", "ceo": {"action": "idle", "expression": "closed"}, "stamp": {"text": "FAMILY ROUND", "color": "gold"}},
+        {"text": "Funding was not approved. Dinner was.", "emphasis": "Dinner", "ceo": {"action": "nod", "expression": "happy"}}
+      ]
+    },
+    {
+      "title": "My premium office tour ☕",
+      "description": "Fast wifi, city view, zero rent. Some call it a cafe.",
+      "hashtags": ["#office", "#startup", "#comedy", "#cafe", "#relatable"],
+      "topic": "his premium office is a cafe",
+      "canonical_en": "A founder shows off his premium office which is a cafe he has been sitting in for days",
+      "category": "the office",
+      "punch_line": 4,
+      "laptop": ["WIFI: CAFE_FREE", "OFFICE: TABLE 4"],
+      "lines": [
+        {"text": "Every serious founder needs a premium office.", "emphasis": "premium", "ceo": {"action": "raise", "expression": "happy"}},
+        {"text": "Mine has fast wifi, unlimited coffee and a city view.", "emphasis": "view", "ceo": {"action": "point", "expression": "happy", "hold": "coffee"}},
+        {"text": "Rent is just one cappuccino a day.", "emphasis": "cappuccino", "ceo": {"action": "idle", "expression": "neutral"}, "card": {"kind": "stat", "label": "RENT", "value": "1 COFFEE"}},
+        {"text": "Clients love meeting me here.", "emphasis": "Clients", "ceo": {"action": "nod", "expression": "happy"}},
+        {"text": "Mostly because it is a cafe, and I have been here since Monday.", "emphasis": "Monday", "ceo": {"action": "idle", "expression": "closed"}, "who": "barista"},
+        {"text": "The barista just made me employee of the month.", "emphasis": "month", "ceo": {"action": "cheer", "expression": "happy"}, "card": {"kind": "role", "text": "EMPLOYEE OF THE MONTH"}}
+      ]
+    },
+    {
+      "title": "Humbled to announce my new chapter 🙏",
+      "description": "Some call it getting fired. I call it a pivot.",
+      "hashtags": ["#linkedin", "#ceo", "#comedy", "#career", "#relatable"],
+      "topic": "a LinkedIn announcement that is really getting fired",
+      "canonical_en": "A humble LinkedIn post about starting a venture is really about being fired this morning",
+      "category": "social media flexing",
+      "punch_line": 4,
+      "lines": [
+        {"text": "Today I am humbled to announce a new chapter in my journey.", "emphasis": "humbled", "ceo": {"action": "type", "expression": "happy"},
+         "insert": {"device": "phone", "app": "social", "title": "New post", "lines": ["Humbled to announce...", "a new chapter!", "#Founder #Grind"]}},
+        {"text": "After years of grinding, I am starting my own venture.", "emphasis": "venture", "ceo": {"action": "raise", "expression": "happy"}},
+        {"text": "No boss. No office. No fixed salary.", "emphasis": "salary", "ceo": {"action": "cross", "expression": "sceptic"}},
+        {"text": "Mostly no salary.", "emphasis": "no", "ceo": {"action": "idle", "expression": "worried"}, "card": {"kind": "stat", "label": "SALARY", "value": "0"}},
+        {"text": "My company let me go this morning, and I am calling it a pivot.", "emphasis": "pivot", "ceo": {"action": "idle", "expression": "closed"}, "stamp": {"text": "PIVOT", "color": "red"}}
+      ]
+    }
+  ]
+}

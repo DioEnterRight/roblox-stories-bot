@@ -1,0 +1,14 @@
+# downloaded / generated at run time
+/models/
+/out/
+engine/remotion/node_modules/
+engine/remotion/out/
+engine/remotion/public/projects/
+engine/remotion/public/sfx/
+engine/renders/
+__pycache__/
+*.pyc
+.pytest_cache/
+# secrets: never commit
+.env
+client_secret*.json

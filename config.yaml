@@ -1,0 +1,147 @@
+# ============================================================
+#  DIO'S STORIES BOT — the only file you normally edit
+#  (every value is checked when a run starts; a typo stops the run with a clear message)
+# ============================================================
+
+# Emergency stop. true = nothing gets made or posted.
+paused: false
+
+# ------------------------------------------------------------
+#  SCHEDULE — India time (24 h). One language per video.
+#  The Make run (hourly) keeps the next uploads ready; the Post run (every 30 min) posts each slot at its time.
+#  A video takes ~50-70 min to make on GitHub's free machines, so keep every_minutes >= 120.
+# ------------------------------------------------------------
+schedule:
+  every_minutes: 180          # one upload every 3 h = 8 a day (240 = 6 a day, 360 = 4, 1440 = 1)
+  first: "01:30"              # the first upload of the day; the rest follow every_minutes (01:30, 04:30, 07:30 ...)
+  languages: [en, hi]         # slot by slot: English, Hindi, English, Hindi ... (use [en] or [hi] for one language)
+  make_ahead: 2               # keep the next 2 uploads ready (raise to 3 if posts ever go out late)
+  make_per_run: 1             # each Make run makes at most this many videos
+
+# ------------------------------------------------------------
+#  LANGUAGES — voices. edge-tts (Microsoft, free) is the main voice; Kokoro (offline, free) the backup.
+# ------------------------------------------------------------
+languages:
+  enabled: [en, hi]
+  en:
+    name: English
+    prompt: lang_en.md
+    edge_voice: en-US-AndrewNeural       # the CEO's voice. Others: en-US-BrianNeural, en-US-ChristopherNeural, en-GB-RyanNeural
+    edge_rate: "+6%"                      # a confident, slightly brisk founder; "+0%" calmer, "+12%" faster
+    kokoro_voice: am_michael              # backup voice
+    kokoro_speed: 1.05
+    tts_lang: en-us
+    words_per_second: 2.6
+  hi:
+    name: Hindi (natural Hinglish)
+    prompt: lang_hi.md
+    edge_voice: hi-IN-MadhurNeural        # male Hindi voice (the other one is hi-IN-SwaraNeural, female)
+    edge_rate: "+4%"
+    kokoro_voice: hm_omega                # backup: hm_omega or hm_psi (male)
+    kokoro_speed: 1.05
+    tts_lang: hi
+    words_per_second: 2.4
+
+voice:
+  engine: edge                # edge (falls back to Kokoro by itself) or kokoro (always Kokoro)
+  edge_retries: 6             # tries per line before the whole video switches to Kokoro
+  edge_pause: 1.2             # seconds between lines (Microsoft throttles fast requests)
+  gap_seconds: 0.22           # pause between lines
+  punch_pause: 0.45           # extra beat of silence before the punch line (comic timing)
+  lead_in: 0.12
+
+# ------------------------------------------------------------
+#  IDEAS + SCRIPT (free models through your FreeLLMAPI)
+# ------------------------------------------------------------
+ideas:
+  candidates: 8               # ideas pitched per brainstorm (the unused good ones are kept for later)
+  similarity_threshold: 0.5   # 0-1: higher = allow more similar ideas
+  categories:                 # the situations the jokes come from (delete a line to drop it, add your own)
+    - morning routine
+    - meetings
+    - team and hiring
+    - investors and funding
+    - the office
+    - salary and payday
+    - family asking about the job
+    - social media flexing
+    - productivity hacks
+    - product launch
+    - vacation and leave
+    - startup buzzwords
+    - rent and the landlord
+    - networking events
+    - the AI startup trend
+    - quarterly results
+
+writing:
+  min_lines: 4
+  max_lines: 8
+  min_words: 38               # 20-32 seconds of voice
+  max_words: 80
+  hashtags_max: 5
+  good_enough: 7.5            # critic score (1-10) at which the rewrite is skipped
+  rewrite_rounds: 1           # rewrites from the critic's fixes (the better draft wins)
+
+# ------------------------------------------------------------
+#  STUDIO — director, checks, judge, render
+# ------------------------------------------------------------
+studio:
+  revise_rounds: 1            # director revisions from the judge's fixes (each costs ~2 min of stills + 2 model calls)
+  good_enough: 7.5            # judge score (1-10) at which no revision is made
+  max_stills: 12              # stills the judge looks at
+  render_timeout_minutes: 150 # one final render; the Make job stops at 240 min
+
+# ------------------------------------------------------------
+#  FREE MODELS (FreeLLMAPI, started inside each run from the FREELLMAPI_KEYS secret — see SETUP.md)
+#  Each role ranks the READY models by `prefer` (name fragments, best first) and rotates the top `rotate_top`
+#  between videos, so every video is written, directed and judged by a different mix of models.
+# ------------------------------------------------------------
+freellm:
+  roles:
+    writer:
+      prefer: ["gemini-2.5-pro", "deepseek-r1", "deepseek-v3", "qwen3-235b", "kimi-k2", "gpt-oss-120b", "llama-3.3-70b", "gemini-2.5-flash"]
+      rotate_top: 4
+      temperature: 0.95
+    critic:
+      prefer: ["gemini-2.5-pro", "deepseek-r1", "qwen3-235b", "gpt-oss-120b", "kimi-k2", "llama-3.3-70b", "gemini-2.5-flash"]
+      rotate_top: 3
+      temperature: 0.3
+    director:
+      prefer: ["gemini-2.5-pro", "gemini-2.5-flash", "deepseek-v3", "qwen3-235b", "gpt-oss-120b", "kimi-k2", "llama-3.3-70b"]
+      rotate_top: 3
+      temperature: 0.6
+    judge:                    # needs a model that can see images (Gemini through a Google AI Studio key is the usual one)
+      prefer: ["gemini-2.5-flash", "gemini-2.5-pro", "gemini-2.0-flash", "llama-4", "qwen2.5-vl", "pixtral", "gpt-4o"]
+      rotate_top: 2
+      temperature: 0.2
+  max_tokens: 8000
+  timeout_seconds: 240
+  max_calls_per_video: 26     # hard cap on requests for one video (all roles together)
+  monthly_token_cap: 60000000 # past this (counted in data/freellm_usage.json) no model is called until next month
+
+# ------------------------------------------------------------
+#  RENDER
+# ------------------------------------------------------------
+video:
+  min_seconds: 12
+  max_seconds: 60
+
+# ------------------------------------------------------------
+#  AI DISCLOSURE (decided from the real content)
+#  YouTube requires the "altered or synthetic" flag only for REALISTIC content; this cartoon is exempt.
+#  Meta asks for disclosure of realistic-sounding synthetic audio: the narrator is a synthetic voice, so the label stays on.
+# ------------------------------------------------------------
+disclosure:
+  youtube_synthetic: false
+  instagram_ai_label: true
+
+publish:
+  instagram: true
+  instagram_max_attempts: 2   # then you get a "post it by hand" GitHub issue and the queue moves on
+  # youtube_mode: api = upload automatically (only after Google approves your API audit; before that uploads stay private)
+  #               manual = you get a GitHub issue with the file + title to upload yourself
+  #               off = skip YouTube
+  youtube_mode: "off"
+  youtube_max_attempts: 2
+  keep_releases_days: 14      # finished videos stay downloadable in Releases this long after posting

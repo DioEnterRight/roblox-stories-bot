@@ -1,0 +1,111 @@
+{
+  "_doc": "Hand-written Hinglish skits used ONLY when no free model is reachable (and by test mode). Each is posted at most once. caption = the same words in Roman letters, 1:1.",
+  "scripts": [
+    {
+      "title": "Mera calendar full hai 📅",
+      "description": "Apni company chalana mushkil hai jab poori company aap hi ho.",
+      "hashtags": ["#hindicomedy", "#ceo", "#startup", "#relatable", "#desi"],
+      "topic": "the founder cancels his own meetings (Hindi)",
+      "canonical_en": "A desi CEO's calendar is full of meetings with himself that he cancels himself",
+      "category": "meetings",
+      "punch_line": 4,
+      "laptop": ["10:00 FOUNDER", "11:00 CANCEL", "12:00 WARNING"],
+      "lines": [
+        {"text": "जब से मैं अपनी company का CEO बना हूँ, calendar पूरा full है।", "caption": "jab se main apni company ka CEO bana hoon, calendar poora full hai.", "emphasis": "full", "ceo": {"action": "type", "expression": "happy"},
+         "insert": {"device": "laptop", "app": "calendar", "title": "Aaj", "lines": ["10:00 Founder ke saath meeting", "11:00 Founder ne cancel kiya", "12:00 Founder ko warning"]}},
+        {"text": "दस बजे founder के साथ meeting है।", "caption": "das baje founder ke saath meeting hai.", "emphasis": "meeting", "ceo": {"action": "nod", "expression": "neutral"}},
+        {"text": "ग्यारह बजे founder ने meeting cancel कर दी।", "caption": "gyarah baje founder ne meeting cancel kar di.", "emphasis": "cancel", "ceo": {"action": "shake", "expression": "angry"}, "stamp": {"text": "CANCEL", "color": "red"}},
+        {"text": "बारह बजे मैंने founder को warning दे दी।", "caption": "barah baje maine founder ko warning de di.", "emphasis": "warning", "ceo": {"action": "point", "expression": "angry"}},
+        {"text": "क्योंकि founder, CEO और intern, सब मैं ही हूँ।", "caption": "kyunki founder, CEO aur intern, sab main hi hoon.", "emphasis": "main", "ceo": {"action": "idle", "expression": "closed"}, "card": {"kind": "role", "text": "CEO, CFO, INTERN"}},
+        {"text": "और सच बोलूँ तो company intern ही चला रहा है।", "caption": "aur sach boloon to company intern hi chala raha hai.", "emphasis": "intern", "ceo": {"action": "sad", "expression": "sad"}}
+      ]
+    },
+    {
+      "title": "Investor mil gaya 💼",
+      "description": "Pitch kiya. Investor ke sawaal the. Aur khana bhi.",
+      "hashtags": ["#hindicomedy", "#startup", "#investor", "#desi", "#mummy"],
+      "topic": "the only investor is his mom (Hindi)",
+      "canonical_en": "A desi founder pitches to an investor who turns out to be his mom",
+      "category": "investors and funding",
+      "punch_line": 4,
+      "lines": [
+        {"text": "इस साल आखिरकार मुझे एक investor मिल गया।", "caption": "is saal aakhirkaar mujhe ek investor mil gaya.", "emphasis": "investor", "ceo": {"action": "cheer", "expression": "happy"}},
+        {"text": "उसने पूछा revenue कितना है, team कितनी बड़ी है?", "caption": "usne poocha revenue kitna hai, team kitni badi hai?", "emphasis": "revenue", "ceo": {"action": "idle", "expression": "worried"}, "who": "mom"},
+        {"text": "मैंने कहा, हम अभी stealth mode में हैं।", "caption": "maine kaha, hum abhi stealth mode mein hain.", "emphasis": "stealth", "ceo": {"action": "cross", "expression": "sceptic"}},
+        {"text": "बोलीं, पाँच साल का stealth mode सोना कहलाता है।", "caption": "boli, paanch saal ka stealth mode sona kehlata hai.", "emphasis": "sona", "ceo": {"action": "idle", "expression": "surprised"}, "who": "mom"},
+        {"text": "Investor मेरी मम्मी थीं।", "caption": "investor meri mummy thi.", "emphasis": "mummy", "ceo": {"action": "idle", "expression": "closed"}, "stamp": {"text": "FAMILY ROUND", "color": "gold"}},
+        {"text": "Funding reject हो गई, पर खाना मिल गया।", "caption": "funding reject ho gayi, par khana mil gaya.", "emphasis": "khana", "ceo": {"action": "nod", "expression": "happy"}}
+      ]
+    },
+    {
+      "title": "Mera premium office tour ☕",
+      "description": "Fast wifi, city view, zero rent. Log ise cafe kehte hain.",
+      "hashtags": ["#hindicomedy", "#office", "#chai", "#startup", "#relatable"],
+      "topic": "his premium office is a cafe (Hindi)",
+      "canonical_en": "A desi founder shows off his premium office which is a cafe he has been sitting in since Monday",
+      "category": "the office",
+      "punch_line": 4,
+      "laptop": ["WIFI: CAFE_FREE", "OFFICE: TABLE 4"],
+      "lines": [
+        {"text": "हर successful founder को एक premium office चाहिए।", "caption": "har successful founder ko ek premium office chahiye.", "emphasis": "premium", "ceo": {"action": "raise", "expression": "happy"}},
+        {"text": "मेरे office में fast wifi, unlimited chai और city view है।", "caption": "mere office mein fast wifi, unlimited chai aur city view hai.", "emphasis": "view", "ceo": {"action": "point", "expression": "happy", "hold": "coffee"}},
+        {"text": "Rent बस एक cutting chai रोज़ का है।", "caption": "rent bas ek cutting chai roz ka hai.", "emphasis": "chai", "ceo": {"action": "idle", "expression": "neutral"}, "card": {"kind": "stat", "label": "RENT", "value": "1 CHAI"}},
+        {"text": "Clients को यहाँ मिलना बहुत पसंद है।", "caption": "clients ko yahan milna bahut pasand hai.", "emphasis": "pasand", "ceo": {"action": "nod", "expression": "happy"}},
+        {"text": "क्योंकि ये एक cafe है, और मैं Monday से यहीं बैठा हूँ।", "caption": "kyunki ye ek cafe hai, aur main Monday se yahin baitha hoon.", "emphasis": "Monday", "ceo": {"action": "idle", "expression": "closed"}, "who": "barista"},
+        {"text": "आज barista ने मुझे employee of the month बना दिया।", "caption": "aaj barista ne mujhe employee of the month bana diya.", "emphasis": "month", "ceo": {"action": "cheer", "expression": "happy"}, "card": {"kind": "role", "text": "EMPLOYEE OF THE MONTH"}}
+      ]
+    },
+    {
+      "title": "Subah 5 baje wala CEO ⏰",
+      "description": "Discipline sab kuch hai. Khaas kar jab karne ko kuch na ho.",
+      "hashtags": ["#hindicomedy", "#morningroutine", "#ceo", "#relatable", "#desi"],
+      "topic": "a 5 a.m. routine for a company that does not exist (Hindi)",
+      "canonical_en": "A desi founder's strict 5 a.m. routine ends back in bed because the company does not exist yet",
+      "category": "morning routine",
+      "punch_line": 4,
+      "lines": [
+        {"text": "मैं सुबह पाँच बजे उठता हूँ, क्योंकि empire खुद नहीं बनते।", "caption": "main subah paanch baje uthta hoon, kyunki empire khud nahi bante.", "emphasis": "empire", "ceo": {"action": "raise", "expression": "happy"}},
+        {"text": "Brush से पहले emails check करता हूँ।", "caption": "brush se pehle emails check karta hoon.", "emphasis": "emails", "ceo": {"action": "scroll", "expression": "neutral", "hold": "phone"},
+         "insert": {"device": "phone", "app": "email", "title": "Inbox", "lines": ["Inbox (0)", "Spam (412)", "Offers (88)"], "highlight": 0}},
+        {"text": "Black coffee पीता हूँ, बिना चीनी, बिना break.", "caption": "black coffee peeta hoon, bina cheeni, bina break.", "emphasis": "break", "ceo": {"action": "idle", "expression": "sceptic", "hold": "coffee"}},
+        {"text": "छह बजे तक मैं desk पर होता हूँ।", "caption": "chhe baje tak main desk par hota hoon.", "emphasis": "desk", "ceo": {"action": "type", "expression": "neutral"}, "card": {"kind": "stat", "label": "TIME", "value": "6:00"}},
+        {"text": "सात बजे तक वापस bed पर।", "caption": "saat baje tak wapas bed par.", "emphasis": "bed", "ceo": {"action": "idle", "expression": "sleepy"}, "stamp": {"text": "BACK TO BED", "color": "blue"}},
+        {"text": "क्योंकि company अभी बनी ही नहीं है।", "caption": "kyunki company abhi bani hi nahi hai.", "emphasis": "nahi", "ceo": {"action": "sad", "expression": "closed"}}
+      ]
+    },
+    {
+      "title": "Itni badi team kaise sambhalta hoon 🪴",
+      "description": "Leadership matlab team ki sunna. Meri team bahut achhi listener hai.",
+      "hashtags": ["#hindicomedy", "#leadership", "#office", "#ceo", "#relatable"],
+      "topic": "the CEO's whole team is a potted plant (Hindi)",
+      "canonical_en": "A desi CEO brags about handling a big team but the team is a potted plant",
+      "category": "team and hiring",
+      "punch_line": 4,
+      "lines": [
+        {"text": "लोग पूछते हैं, इतनी बड़ी team कैसे संभालते हो?", "caption": "log poochhte hain, itni badi team kaise sambhalte ho?", "emphasis": "team", "ceo": {"action": "cross", "expression": "happy"}},
+        {"text": "Simple है, रोज़ सुबह motivational speech देता हूँ।", "caption": "simple hai, roz subah motivational speech deta hoon.", "emphasis": "speech", "ceo": {"action": "raise", "expression": "happy"}},
+        {"text": "फिर team से feedback लेता हूँ।", "caption": "phir team se feedback leta hoon.", "emphasis": "feedback", "ceo": {"action": "look", "expression": "neutral"}},
+        {"text": "Team बोलती है speech बहुत अच्छी थी।", "caption": "team bolti hai speech bahut achhi thi.", "emphasis": "achhi", "ceo": {"action": "nod", "expression": "happy"}},
+        {"text": "Team एक पौधा है।", "caption": "team ek paudha hai.", "emphasis": "paudha", "ceo": {"action": "idle", "expression": "closed"}, "card": {"kind": "stat", "label": "EMPLOYEES", "value": "1 PLANT"}},
+        {"text": "फिर भी office मुझसे ज़्यादा आता है।", "caption": "phir bhi office mujhse zyada aata hai.", "emphasis": "zyada", "ceo": {"action": "sad", "expression": "sad"}}
+      ]
+    },
+    {
+      "title": "Naya chapter shuru 🙏",
+      "description": "Kuch log ise naukri jaana kehte hain. Main ise pivot kehta hoon.",
+      "hashtags": ["#hindicomedy", "#linkedin", "#career", "#ceo", "#relatable"],
+      "topic": "a LinkedIn announcement that is really getting fired (Hindi)",
+      "canonical_en": "A humble desi LinkedIn post about a new venture is really about being fired this morning",
+      "category": "social media flexing",
+      "punch_line": 4,
+      "lines": [
+        {"text": "आज मैं बहुत humbled हूँ एक नया chapter शुरू करते हुए।", "caption": "aaj main bahut humbled hoon ek naya chapter shuru karte hue.", "emphasis": "humbled", "ceo": {"action": "type", "expression": "happy"},
+         "insert": {"device": "phone", "app": "social", "title": "New post", "lines": ["Humbled to announce...", "naya chapter!", "#Founder #Grind"]}},
+        {"text": "सालों की मेहनत के बाद, अब मैं अपना venture शुरू कर रहा हूँ।", "caption": "saalon ki mehnat ke baad, ab main apna venture shuru kar raha hoon.", "emphasis": "venture", "ceo": {"action": "raise", "expression": "happy"}},
+        {"text": "ना boss, ना office, ना fixed salary.", "caption": "na boss, na office, na fixed salary.", "emphasis": "salary", "ceo": {"action": "cross", "expression": "sceptic"}},
+        {"text": "Mostly ना salary.", "caption": "mostly na salary.", "emphasis": "salary", "ceo": {"action": "idle", "expression": "worried"}, "card": {"kind": "stat", "label": "SALARY", "value": "0"}},
+        {"text": "आज सुबह company ने मुझे निकाल दिया, मैं इसे pivot बोल रहा हूँ।", "caption": "aaj subah company ne mujhe nikaal diya, main ise pivot bol raha hoon.", "emphasis": "pivot", "ceo": {"action": "idle", "expression": "closed"}, "stamp": {"text": "PIVOT", "color": "red"}}
+      ]
+    }
+  ]
+}

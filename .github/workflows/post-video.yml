@@ -1,0 +1,55 @@
+name: Post video
+
+on:
+  schedule:
+    - cron: "7,37 * * * *"   # every 30 min; posts only when a config.yaml schedule slot is due (change times THERE)
+  workflow_dispatch: {}      # the button: posts the oldest ready video right now
+
+concurrency:
+  group: dio-post
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Is a slot due? (idle runs stop here in seconds)
+        id: gate
+        run: |
+          pip install -q pyyaml
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then echo "due=true" >> "$GITHUB_OUTPUT"; else python -m pipeline.schedule; fi
+
+      - name: Install
+        if: steps.gate.outputs.due == 'true'
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install -q requests pyyaml google-api-python-client google-auth
+
+      - name: Post to Instagram + YouTube
+        if: steps.gate.outputs.due == 'true'
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_PAGE_TOKEN: ${{ secrets.IG_PAGE_TOKEN }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: python -m pipeline.publish ${{ github.event_name == 'workflow_dispatch' && '--now' || '' }}
+
+      - name: Save memory
+        if: always() && steps.gate.outputs.due == 'true'
+        run: |
+          bash tools/save_state.sh "bot: posted $(date -u +%F)"
