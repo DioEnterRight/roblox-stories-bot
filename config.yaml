@@ -144,4 +144,10 @@ publish:
   #               off = skip YouTube
   youtube_mode: "off"
   youtube_max_attempts: 2
+  # YouTube safety controller (pipeline/yt_guard.py). uploadLimitExceeded is never retried: YouTube pauses >= 24 h.
+  youtube_channel_daily_cap: 1          # successful uploads per ROLLING 24 h. Conservative start for a new channel (not YouTube's official limit); raise once the channel's real limit is known.
+  youtube_api_daily_insert_cap: 100     # videos.insert calls per Pacific-time day (Google's default allowance, Nov 2026)
+  youtube_pause_hours: 24               # pause after uploadLimitExceeded (minimum 24)
+  youtube_require_quota_clearance: true # after quotaExceeded, wait for the next Pacific quota day
+  youtube_channel_id: ""                # optional UC... id: refuse uploads if the secrets point at another channel
   keep_releases_days: 14      # finished videos stay downloadable in Releases this long after posting
