@@ -120,6 +120,33 @@
       "tag": "vid-20261126-231827-hi-morning-routine",
       "status": "queued",
       "created": "2026-11-27T01:34+05:30"
+    },
+    {
+      "id": "20261127-013625-en-product-launch",
+      "title": "AI‑Toast: The Future of Breakfast 🍞",
+      "topic": "product launch",
+      "canonical_en": "He announces a breakthrough AI tool, but the 'AI' is a toaster.",
+      "language": "en",
+      "format": "ceo",
+      "category": "product launch",
+      "hook_line": "Launching our AIdriven platform that will automate every task.",
+      "duration": 18.45,
+      "look": {
+        "main": "street",
+        "main_mood": "night",
+        "music_style": "lofi",
+        "accent": "#FFD400",
+        "locations": [
+          "street",
+          "apartment",
+          "boardroom"
+        ]
+      },
+      "critic_score": 7.0,
+      "studio_score": 6.0,
+      "tag": "vid-20261127-013625-en-product-launch",
+      "status": "queued",
+      "created": "2026-11-27T02:59+05:30"
     }
   ],
   "missed_slots": [

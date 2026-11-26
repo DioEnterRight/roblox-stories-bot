@@ -36,26 +36,18 @@
       "language": "hi",
       "video_id": "20261126-231827-hi-morning-routine",
       "created": "2026-11-27T01:34+05:30"
-    }
-  ],
-  "backlog": [
+    },
     {
       "canonical_en": "He announces a breakthrough AI tool, but the 'AI' is a toaster.",
       "category": "product launch",
       "hook": "Launching our AI‑driven platform that will automate every task.",
-      "setup": "Teasing AI product that will change industry.",
       "twist": "It's just a toaster I named 'AI‑Toast'.",
-      "visual_gag": "Toaster with a small screen showing 'AI' logo.",
-      "scores": {
-        "funny": 7,
-        "relatable": 6,
-        "originality": 7,
-        "visual": 7,
-        "twist": 7
-      },
-      "language": null,
-      "added": "2026-11-26T19:11+05:30"
-    },
+      "language": "en",
+      "video_id": "20261127-013625-en-product-launch",
+      "created": "2026-11-27T02:59+05:30"
+    }
+  ],
+  "backlog": [
     {
       "canonical_en": "He boasts about scaling the team, but his only employee is a rubber chicken.",
       "category": "team and hiring",
