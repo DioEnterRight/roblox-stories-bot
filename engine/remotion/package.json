@@ -19,7 +19,7 @@
     "postprocessing": "6.39.6",
     "react": "19.3.1",
     "react-dom": "19.3.1",
-    "remotion": "4.0.540",
+    "remotion": "4.0.546",
     "three": "0.182.0"
   },
   "devDependencies": {
