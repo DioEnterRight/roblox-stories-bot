@@ -58,6 +58,11 @@ def validate(cfg):
         _need(isinstance(roles.get(r), dict) and isinstance(roles[r].get("prefer"), list), f"freellm.roles.{r}.prefer must be a list")
     _num(f, "max_calls_per_video", 4, 80, "freellm")
     _num(f, "monthly_token_cap", 100_000, 10_000_000_000, "freellm")
+    b = cfg.get("brand") or {}
+    _need(str(b.get("corner_handle", "")).startswith("@"), "brand.corner_handle must look like @name")
+    _need(b.get("outro_headline") and b.get("channel_name"), "brand.outro_headline and brand.channel_name are required")
+    _need(isinstance(b.get("outro"), dict) and all(k in (b["outro"].get("en") or {}) for k in ("caption", "spoken")),
+          "brand.outro.en needs caption and spoken")
     p = cfg.get("publish") or {}
     _need(p.get("youtube_mode") in ("api", "manual", "off"), "publish.youtube_mode must be api, manual or off")
     _need(isinstance(p.get("instagram"), bool), "publish.instagram must be true or false")

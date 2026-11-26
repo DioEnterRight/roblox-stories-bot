@@ -139,6 +139,8 @@ export type ReelMeta = {
   hook?: string;
   cta?: { keyword: string; line: string };
   creator?: string;
+  /** Channel branding: corner handle on every frame + the follow outro (pipeline/branding.py). */
+  brand?: { corner?: string; outro?: { start: number; headline: string; sub: string; minSec: number } };
   /** Free notes from the planner for QA agents. */
   notes?: string;
 };

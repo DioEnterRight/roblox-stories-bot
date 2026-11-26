@@ -18,6 +18,7 @@ Shot list (one object per shot, in order):
 import copy
 import math
 
+from . import branding
 from .common import latin_only, locations, log, stable_seed
 
 FRAMINGS = ["wide", "medium", "close", "face", "low", "high", "two_shot", "ots"]
@@ -480,11 +481,13 @@ def _within(words, ref, t0, t1):
     return wt is not None and t0 - 0.01 <= wt[0] < t1
 
 
-def compile_plan(shots, words, script, look, punch=None):
+def compile_plan(shots, words, script, look, punch=None, cfg=None):
     """Repaired shots -> plan.json dict for engine/scripts/plan.mjs."""
     locs = locations()
     seed = int(look["seed"])
-    end = reel_end(words) + 0.35
+    tail = branding.tail_seconds(cfg, script, words) if cfg else 0.35
+    end = reel_end(words) + tail
+    outro_line = branding.outro_index(script)
     scenes, sfx = [], []
     last_sfx = [-9.0]
 
@@ -572,8 +575,12 @@ def compile_plan(shots, words, script, look, punch=None):
                 anchors.append({"fire": "line", "at": {"line": f"l{ln}", "wordIndex": wi}, "payload": {"id": "insert"}})
         if i > 0 and shots[i - 1]["location"] != s["location"]:
             add_sfx("whoosh", start, t0, -14, offset=-0.12)
-        scenes.append({"id": f"s{i + 1:02d}", "archetype": "Shot", "set": s["location"], "start": start, "cast": cast,
-                       "camera": camera, "props": props, "anchors": anchors})
+        scene = {"id": f"s{i + 1:02d}", "archetype": "Shot", "set": s["location"], "start": start, "cast": cast,
+                 "camera": camera, "props": props, "anchors": anchors}
+        if outro_line is not None and s["start"]["line"] == outro_line + 1:
+            scene["captions"] = {"hidden": True}   # the big FOLLOW card carries the words
+            add_sfx("ding", shot_ref, t0, -10)
+        scenes.append(scene)
 
     music = {"file": "music.wav", "gainDb": look["music"]["gain_db"], "fadeInSec": 0.02, "fadeOutSec": 0.4, "duckDb": -4}
     if punch:
@@ -582,11 +589,12 @@ def compile_plan(shots, words, script, look, punch=None):
         add_sfx("scratch", pref, pt - 0.12, -7, offset=-0.12)
     return {
         "niche": "ceo",
-        "meta": {"title": script["title"], "topic": script.get("topic", script["title"]), "hook": script["lines"][0]["caption"]},
+        "meta": {"title": script["title"], "topic": script.get("topic", script["title"]), "hook": script["lines"][0]["caption"],
+                 **({"brand": branding.meta(cfg, script, words)} if cfg else {})},
         "audio": {"voice": "voice.wav", "music": music, "sfx": sfx},
         "captions": {"params": {"accent": look["accent"]}},
         "scenes": scenes,
-        "tailSec": 0.35,
+        "tailSec": round(tail, 3),
     }
 
 

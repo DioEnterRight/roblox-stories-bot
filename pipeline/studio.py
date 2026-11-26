@@ -11,7 +11,7 @@ Every version is kept in out/<video>/versions/vN/ (shots.json, plan.json, sheet.
 import json
 import shutil
 
-from . import compiler, director, engine, judge, music
+from . import branding, compiler, director, engine, judge, music
 from .common import log, write_json
 
 
@@ -29,8 +29,8 @@ def _mid_times(shots, words, max_n):
 
 def _version(cfg, n, shots_raw, script, words, look, punch, slug, vdir, session):
     """Check + compile + stills + judge one shot list. -> dict(score, shots, plan, guards, repairs, judge)."""
-    shots, repairs = compiler.check_shots(shots_raw, words, look)
-    plan = compiler.compile_plan(shots, words, script, look, punch)
+    shots, repairs = compiler.check_shots(branding.force_outro_shot(shots_raw, script), words, look)
+    plan = compiler.compile_plan(shots, words, script, look, punch, cfg)
     engine.write_plan(slug, plan)
     ok, problems = engine.check_plan(slug)
     if not ok:

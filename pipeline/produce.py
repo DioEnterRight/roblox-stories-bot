@@ -11,7 +11,7 @@ import json
 import sys
 import time
 
-from . import analytics, engine, ideas, languages, llm, qc, schedule, studio, variety, voice, writer
+from . import analytics, branding, engine, ideas, languages, llm, qc, schedule, studio, variety, voice, writer
 from .common import OUT, load_config, load_history, log, now_ist, run, save_history, slugify
 
 
@@ -56,6 +56,7 @@ def produce_one(cfg, history, stats, language, test, preview=False):
         except llm.LLMUnavailable as e:
             log(f"no free models this run ({e}); offline script bank + auto director", "WARN")
     script, idea = get_script(cfg, history, stats, lp, session, test)
+    script = branding.add_outro(cfg, script, language)   # last ~3 s: the CEO says "Follow @outrichguy"
     if script.get("laptop"):
         look["laptop"] = script["laptop"]
     vid_id = f"{stamp}-{language}-{slugify(script.get('topic') or script['title'], 28)}"

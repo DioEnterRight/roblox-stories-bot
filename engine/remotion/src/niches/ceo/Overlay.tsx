@@ -6,6 +6,8 @@ import React from "react";
 import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { hash01 } from "../../core/timeline";
 import { mulberry32 } from "./three/tex";
+import type { ReelSpec } from "../../core/types";
+import { BrandLayer } from "./ui/Brand";
 
 let grainUrl: string | null = null;
 const getGrain = () => {
@@ -26,11 +28,14 @@ const getGrain = () => {
   return grainUrl;
 };
 
-export const CeoOverlay: React.FC = () => {
+export const CeoOverlay: React.FC<{ reel: ReelSpec }> = ({ reel }) => {
   const frame = useCurrentFrame();
   const ox = Math.floor(hash01(`gx${frame}`) * 256);
   const oy = Math.floor(hash01(`gy${frame}`) * 256);
   return (
-    <AbsoluteFill style={{ pointerEvents: "none", backgroundImage: `url(${getGrain()})`, backgroundPosition: `${ox}px ${oy}px`, mixBlendMode: "overlay", opacity: 0.01 }} />
+    <>
+      <AbsoluteFill style={{ pointerEvents: "none", backgroundImage: `url(${getGrain()})`, backgroundPosition: `${ox}px ${oy}px`, mixBlendMode: "overlay", opacity: 0.01 }} />
+      <BrandLayer reel={reel} />
+    </>
   );
 };

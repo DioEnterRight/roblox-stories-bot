@@ -121,6 +121,19 @@ freellm:
   monthly_token_cap: 60000000 # past this (counted in data/freellm_usage.json) no model is called until next month
 
 # ------------------------------------------------------------
+#  BRAND — @outrichguy in the top-right corner of every frame; the last ~3 s push "Follow @outrichguy"
+#  (the CEO says it, a big FOLLOW card shows the handle, "Dio's Stories" smaller underneath)
+# ------------------------------------------------------------
+brand:
+  corner_handle: "@outrichguy"
+  outro_headline: "@outrichguy"     # the main focus of the outro card
+  channel_name: "Dio's Stories"     # shown smaller under it
+  outro_seconds: 3
+  outro:
+    en: {caption: "Follow @outrichguy", spoken: "Follow at out rich guy, for more Dio's Stories!"}
+    hi: {caption: "Follow karo @outrichguy", spoken: "Aur stories ke liye, follow karo, at out rich guy!"}
+
+# ------------------------------------------------------------
 #  RENDER
 # ------------------------------------------------------------
 video:
