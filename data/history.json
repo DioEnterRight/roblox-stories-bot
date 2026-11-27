@@ -338,8 +338,13 @@
       "critic_score": 7.0,
       "studio_score": 7.0,
       "tag": "vid-20261127-192633-en-office-view",
-      "status": "queued",
-      "created": "2026-11-27T21:50+05:30"
+      "status": "published",
+      "created": "2026-11-27T21:50+05:30",
+      "slot": "2026-11-28 01:30",
+      "ig_media_id": "18112060394214368",
+      "ig_link": "https://www.instagram.com/reel/DgQfsIXPkE2/",
+      "ig_state": "posted",
+      "published_at": "2026-11-28T01:34+05:30"
     }
   ],
   "missed_slots": [
