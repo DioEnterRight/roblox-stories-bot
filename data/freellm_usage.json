@@ -1,11 +1,11 @@
 {
   "2026-11": {
-    "calls": 34,
-    "prompt_tokens": 60157,
-    "completion_tokens": 40331,
+    "calls": 39,
+    "prompt_tokens": 70171,
+    "completion_tokens": 48486,
     "by_model": {
-      "groq/openai/gpt-oss-120b": 12,
-      "google/gemini-2.5-flash-lite": 17,
+      "groq/openai/gpt-oss-120b": 14,
+      "google/gemini-2.5-flash-lite": 20,
       "ovh/Meta-Llama-3_3-70B-Instruct": 1,
       "ovh/gpt-oss-120b": 2,
       "groq/qwen/qwen3.8-27b": 1
