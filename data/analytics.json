@@ -1,5 +1,151 @@
 {
   "version": 1,
-  "videos": {},
-  "updated": "2026-11-26T17:37+05:30"
+  "videos": {
+    "20261126-173738-en-investors-and-funding": {
+      "video_id": "20261126-173738-en-investors-and-funding",
+      "language": "en",
+      "topic": "investors and funding",
+      "format": "ceo",
+      "title": "Seed Round Surprise 🍕",
+      "category": "investors and funding",
+      "hook_line": "Just closed a seed round with a toptier VC—valuation's through the roof.",
+      "look": {
+        "main": "boardroom",
+        "main_mood": "morning",
+        "music_style": "suspense",
+        "accent": "#FFD400",
+        "locations": [
+          "boardroom",
+          "apartment"
+        ]
+      },
+      "critic_score": 8.0,
+      "studio_score": 7.5,
+      "duration": 18.9,
+      "published_at": "2026-11-26T19:21+05:30",
+      "metrics": {
+        "ig_views": 0,
+        "ig_reach": 0,
+        "ig_likes": 0,
+        "ig_comments": 0,
+        "ig_shares": 0,
+        "ig_saves": 0,
+        "ig_avg_watch_ms": 0
+      },
+      "last_update": "2026-11-27T04:37+05:30",
+      "views": {
+        "ig": 0
+      }
+    },
+    "20261126-191321-en-ai-startup": {
+      "video_id": "20261126-191321-en-ai-startup",
+      "language": "en",
+      "topic": "AI startup",
+      "format": "ceo",
+      "title": "AI Copywriter CEO 🤖",
+      "category": "the AI startup trend",
+      "hook_line": "Our proprietary AI writes 100% of our copy in seconds.",
+      "look": {
+        "main": "apartment",
+        "main_mood": "golden",
+        "music_style": "funk",
+        "accent": "#FFD400",
+        "locations": [
+          "apartment",
+          "street",
+          "cafe"
+        ]
+      },
+      "critic_score": 7.0,
+      "studio_score": 7.0,
+      "duration": 20.05,
+      "published_at": "2026-11-26T23:02+05:30",
+      "metrics": {
+        "ig_views": 0,
+        "ig_reach": 0,
+        "ig_likes": 0,
+        "ig_comments": 0,
+        "ig_shares": 0,
+        "ig_saves": 0,
+        "ig_avg_watch_ms": 0
+      },
+      "last_update": "2026-11-27T04:37+05:30",
+      "views": {
+        "ig": 0
+      }
+    },
+    "20261126-211710-hi-morning-routine": {
+      "video_id": "20261126-211710-hi-morning-routine",
+      "language": "hi",
+      "topic": "Morning Routine",
+      "format": "ceo",
+      "title": "Sunrise Meditation CEO Vibes 😎",
+      "category": "morning routine",
+      "hook_line": "main 4:30 baje uthta hoon power meditation se empire align karta hoon",
+      "look": {
+        "main": "cafe",
+        "main_mood": "golden",
+        "music_style": "corporate",
+        "accent": "#FFD400",
+        "locations": [
+          "cafe",
+          "nook"
+        ]
+      },
+      "critic_score": 8.0,
+      "studio_score": 7.0,
+      "duration": 27.65,
+      "published_at": "2026-11-27T02:30+05:30",
+      "metrics": {
+        "ig_views": 0,
+        "ig_reach": 0,
+        "ig_likes": 0,
+        "ig_comments": 0,
+        "ig_shares": 0,
+        "ig_saves": 0,
+        "ig_avg_watch_ms": 0
+      },
+      "last_update": "2026-11-27T04:37+05:30",
+      "views": {
+        "ig": 0
+      }
+    },
+    "20261126-231827-hi-morning-routine": {
+      "video_id": "20261126-231827-hi-morning-routine",
+      "language": "hi",
+      "topic": "morning routine",
+      "format": "ceo",
+      "title": "Morning Meditation ya Meme Scroll? 🌅",
+      "category": "morning routine",
+      "hook_line": "main 4:30 am par uthta hoon, power meditation se empire align karta hoon",
+      "look": {
+        "main": "street",
+        "main_mood": "evening",
+        "music_style": "lofi",
+        "accent": "#FF9D2E",
+        "locations": [
+          "street",
+          "nook"
+        ]
+      },
+      "critic_score": 7.0,
+      "studio_score": 5.5,
+      "duration": 32.94,
+      "published_at": "2026-11-27T04:33+05:30",
+      "metrics": {
+        "ig_views": 0,
+        "ig_reach": 0,
+        "ig_likes": 0,
+        "ig_comments": 0,
+        "ig_shares": 0,
+        "ig_saves": 0,
+        "ig_avg_watch_ms": 0
+      },
+      "last_update": "2026-11-27T04:37+05:30",
+      "views": {
+        "ig": 0
+      }
+    }
+  },
+  "updated": "2026-11-27T04:37+05:30"
 }

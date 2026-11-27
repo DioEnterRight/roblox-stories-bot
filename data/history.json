@@ -179,6 +179,32 @@
       "tag": "vid-20261127-030123-en-product-launch",
       "status": "queued",
       "created": "2026-11-27T04:16+05:30"
+    },
+    {
+      "id": "20261127-043802-hi-team-hiring",
+      "title": "Hiring Pivot Talent? 🐔",
+      "topic": "team hiring",
+      "canonical_en": "He boasts about scaling the team, but his only employee is a rubber chicken.",
+      "language": "hi",
+      "format": "ceo",
+      "category": "team and hiring",
+      "hook_line": "hum hiring kar rahe hain top talent, jo market se bhi tez pivot kar sake",
+      "duration": 33.05,
+      "look": {
+        "main": "nook",
+        "main_mood": "rain",
+        "music_style": "corporate",
+        "accent": "#FFD400",
+        "locations": [
+          "nook",
+          "cafe"
+        ]
+      },
+      "critic_score": 6.0,
+      "studio_score": 5.5,
+      "tag": "vid-20261127-043802-hi-team-hiring",
+      "status": "queued",
+      "created": "2026-11-27T06:51+05:30"
     }
   ],
   "missed_slots": [
