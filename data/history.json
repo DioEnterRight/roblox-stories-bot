@@ -377,6 +377,33 @@
       "ig_link": "https://www.instagram.com/reel/DgQz6MPhayB/",
       "ig_state": "posted",
       "published_at": "2026-11-28T04:31+05:30"
+    },
+    {
+      "id": "20261128-023451-hi-meetings",
+      "title": "Boardroom Full of Visionaries 🌱",
+      "topic": "meetings",
+      "canonical_en": "He says his board meetings are packed, but the board is just his houseplants.",
+      "language": "hi",
+      "format": "ceo",
+      "category": "meetings",
+      "hook_line": "hamari weekly boardroom hamesha full hai visionary leaders se",
+      "duration": 28.12,
+      "look": {
+        "main": "nook",
+        "main_mood": "rain",
+        "music_style": "funk",
+        "accent": "#FF9D2E",
+        "locations": [
+          "nook",
+          "cafe",
+          "street"
+        ]
+      },
+      "critic_score": 6.0,
+      "studio_score": 6.0,
+      "tag": "vid-20261128-023451-hi-meetings",
+      "status": "queued",
+      "created": "2026-11-28T04:33+05:30"
     }
   ],
   "missed_slots": [
