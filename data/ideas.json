@@ -63,6 +63,15 @@
       "language": "hi",
       "video_id": "20261127-043802-hi-team-hiring",
       "created": "2026-11-27T06:51+05:30"
+    },
+    {
+      "canonical_en": "He unveils a revolutionary app that’s just a placeholder page",
+      "category": "product launch",
+      "hook": "Today we launch the beta of our AI‑driven platform.",
+      "twist": "The ‘beta’ page says ‘Coming Soon’ and redirects to a Google search.",
+      "language": "hi",
+      "video_id": "20261127-130121-hi-product-launch",
+      "created": "2026-11-27T14:54+05:30"
     }
   ],
   "backlog": [
@@ -146,23 +155,6 @@
         "relatable": 6,
         "originality": 7,
         "visual": 7,
-        "twist": 7
-      },
-      "language": null,
-      "added": "2026-11-26T21:14+05:30"
-    },
-    {
-      "canonical_en": "He unveils a revolutionary app that’s just a placeholder page",
-      "category": "product launch",
-      "hook": "Today we launch the beta of our AI‑driven platform.",
-      "setup": "Our users will automate their workflows with one click.",
-      "twist": "The ‘beta’ page says ‘Coming Soon’ and redirects to a Google search.",
-      "visual_gag": "CEO clicking a ‘Launch’ button on a laptop, screen shows a 404 page",
-      "scores": {
-        "funny": 7,
-        "relatable": 6,
-        "originality": 7,
-        "visual": 6,
         "twist": 7
       },
       "language": null,
