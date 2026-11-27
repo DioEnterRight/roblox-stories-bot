@@ -345,6 +345,33 @@
       "ig_link": "https://www.instagram.com/reel/DgQfsIXPkE2/",
       "ig_state": "posted",
       "published_at": "2026-11-28T01:34+05:30"
+    },
+    {
+      "id": "20261128-003855-hi-meetings",
+      "title": "Green CEOs in My Boardroom 🌱",
+      "topic": "meetings",
+      "canonical_en": "He says his board meetings are packed, but the board is just his houseplants.",
+      "language": "hi",
+      "format": "ceo",
+      "category": "meetings",
+      "hook_line": "main har subah 5 baje uthta hoon kyunki mere boardroom mein hamesha 10 CEOs hote hain",
+      "duration": 28.12,
+      "look": {
+        "main": "nook",
+        "main_mood": "night",
+        "music_style": "keys",
+        "accent": "#FFD400",
+        "locations": [
+          "nook",
+          "apartment",
+          "cafe"
+        ]
+      },
+      "critic_score": 7.0,
+      "studio_score": 5.5,
+      "tag": "vid-20261128-003855-hi-meetings",
+      "status": "queued",
+      "created": "2026-11-28T02:32+05:30"
     }
   ],
   "missed_slots": [
