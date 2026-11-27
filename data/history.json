@@ -251,6 +251,32 @@
       "ig_link": "https://www.instagram.com/reel/DgPk7WGAv9k/",
       "ig_state": "posted",
       "published_at": "2026-11-27T17:01+05:30"
+    },
+    {
+      "id": "20261127-145603-hi-product-launch",
+      "title": "Beta Launch Ka Big Reveal 🚀",
+      "topic": "product launch",
+      "canonical_en": "He unveils a revolutionary app that’s just a placeholder page",
+      "language": "hi",
+      "format": "ceo",
+      "category": "product launch",
+      "hook_line": "main paanch baje uthta hoon, kyunki empire ko mere sleeping time ki parwah nahi",
+      "duration": 29.01,
+      "look": {
+        "main": "street",
+        "main_mood": "golden",
+        "music_style": "suspense",
+        "accent": "#FFD400",
+        "locations": [
+          "street",
+          "boardroom"
+        ]
+      },
+      "critic_score": 7.0,
+      "studio_score": 6.0,
+      "tag": "vid-20261127-145603-hi-product-launch",
+      "status": "queued",
+      "created": "2026-11-27T17:24+05:30"
     }
   ],
   "missed_slots": [

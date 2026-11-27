@@ -72,6 +72,15 @@
       "language": "hi",
       "video_id": "20261127-130121-hi-product-launch",
       "created": "2026-11-27T14:54+05:30"
+    },
+    {
+      "canonical_en": "He unveils a revolutionary app that’s just a placeholder page",
+      "category": "product launch",
+      "hook": "Today we launch the beta of our AI‑driven platform.",
+      "twist": "The ‘beta’ page says ‘Coming Soon’ and redirects to a Google search.",
+      "language": "hi",
+      "video_id": "20261127-145603-hi-product-launch",
+      "created": "2026-11-27T17:24+05:30"
     }
   ],
   "backlog": [
