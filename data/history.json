@@ -277,6 +277,33 @@
       "tag": "vid-20261127-145603-hi-product-launch",
       "status": "queued",
       "created": "2026-11-27T17:24+05:30"
+    },
+    {
+      "id": "20261127-172610-en-office",
+      "title": "CEO Views: Skyline or Laundry? 🧺",
+      "topic": "office",
+      "canonical_en": "He says his office has 5‑star views, but he's on a couch in a laundry room.",
+      "language": "en",
+      "format": "ceo",
+      "category": "the office",
+      "hook_line": "My office commands a 360-degree view of the city’s skyline—where every window is a new market.",
+      "duration": 26.67,
+      "look": {
+        "main": "street",
+        "main_mood": "golden",
+        "music_style": "lofi",
+        "accent": "#FFD400",
+        "locations": [
+          "street",
+          "nook",
+          "apartment"
+        ]
+      },
+      "critic_score": 7.0,
+      "studio_score": 7.0,
+      "tag": "vid-20261127-172610-en-office",
+      "status": "queued",
+      "created": "2026-11-27T19:24+05:30"
     }
   ],
   "missed_slots": [

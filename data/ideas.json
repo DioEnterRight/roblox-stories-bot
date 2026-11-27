@@ -81,26 +81,18 @@
       "language": "hi",
       "video_id": "20261127-145603-hi-product-launch",
       "created": "2026-11-27T17:24+05:30"
-    }
-  ],
-  "backlog": [
+    },
     {
       "canonical_en": "He says his office has 5‑star views, but he's on a couch in a laundry room.",
       "category": "the office",
       "hook": "My office overlooks the skyline—clouds of opportunity everywhere.",
-      "setup": "Describing high‑rise office with panoramic view.",
       "twist": "I'm actually on a couch in the apartment laundry room.",
-      "visual_gag": "Couch with laptop, laundry machines in background, window showing brick wall.",
-      "scores": {
-        "funny": 6,
-        "relatable": 7,
-        "originality": 6,
-        "visual": 7,
-        "twist": 6
-      },
-      "language": null,
-      "added": "2026-11-26T19:11+05:30"
-    },
+      "language": "en",
+      "video_id": "20261127-172610-en-office",
+      "created": "2026-11-27T19:24+05:30"
+    }
+  ],
+  "backlog": [
     {
       "canonical_en": "He says his board meetings are packed, but the board is just his houseplants.",
       "category": "meetings",
