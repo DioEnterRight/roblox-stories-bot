@@ -275,8 +275,13 @@
       "critic_score": 7.0,
       "studio_score": 6.0,
       "tag": "vid-20261127-145603-hi-product-launch",
-      "status": "queued",
-      "created": "2026-11-27T17:24+05:30"
+      "status": "published",
+      "created": "2026-11-27T17:24+05:30",
+      "slot": "2026-11-27 22:30",
+      "ig_media_id": "17916254493657377",
+      "ig_link": "https://www.instagram.com/reel/DgQRY3Fhp0X/",
+      "ig_state": "posted",
+      "published_at": "2026-11-27T23:29+05:30"
     },
     {
       "id": "20261127-172610-en-office",
