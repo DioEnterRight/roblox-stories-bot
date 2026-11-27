@@ -309,6 +309,32 @@
       "ig_link": "https://www.instagram.com/reel/DgP40w_MyAQ/",
       "ig_state": "posted",
       "published_at": "2026-11-27T19:55+05:30"
+    },
+    {
+      "id": "20261127-192633-en-office-view",
+      "title": "CEO's 5‑Star View… From the Laundry Room 🧺",
+      "topic": "office view",
+      "canonical_en": "He says his office has 5‑star views, but he's on a couch in a laundry room.",
+      "language": "en",
+      "format": "ceo",
+      "category": "the office",
+      "hook_line": "I run a 10floor empire from a window that kisses the skyline.",
+      "duration": 21.67,
+      "look": {
+        "main": "cafe",
+        "main_mood": "evening",
+        "music_style": "corporate",
+        "accent": "#5CE1FF",
+        "locations": [
+          "cafe",
+          "apartment"
+        ]
+      },
+      "critic_score": 7.0,
+      "studio_score": 7.0,
+      "tag": "vid-20261127-192633-en-office-view",
+      "status": "queued",
+      "created": "2026-11-27T21:50+05:30"
     }
   ],
   "missed_slots": [
