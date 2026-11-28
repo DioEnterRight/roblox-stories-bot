@@ -404,6 +404,32 @@
       "tag": "vid-20261128-023451-hi-meetings",
       "status": "queued",
       "created": "2026-11-28T04:33+05:30"
+    },
+    {
+      "id": "20261128-043520-en-salary-and-payday",
+      "title": "CEO's Bonus: Mission Accomplished? 🐖",
+      "topic": "salary and payday",
+      "canonical_en": "He announces a massive bonus then checks his empty bank app",
+      "language": "en",
+      "format": "ceo",
+      "category": "salary and payday",
+      "hook_line": "This quarter we hit two hundred percent of target, bonuses are coming.",
+      "duration": 20.31,
+      "look": {
+        "main": "apartment",
+        "main_mood": "golden",
+        "music_style": "suspense",
+        "accent": "#FFD400",
+        "locations": [
+          "apartment",
+          "street"
+        ]
+      },
+      "critic_score": 7.0,
+      "studio_score": 6.0,
+      "tag": "vid-20261128-043520-en-salary-and-payday",
+      "status": "queued",
+      "created": "2026-11-28T06:00+05:30"
     }
   ],
   "missed_slots": [

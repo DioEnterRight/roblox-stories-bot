@@ -117,6 +117,15 @@
       "language": "hi",
       "video_id": "20261128-023451-hi-meetings",
       "created": "2026-11-28T04:33+05:30"
+    },
+    {
+      "canonical_en": "He announces a massive bonus then checks his empty bank app",
+      "category": "salary and payday",
+      "hook": "This quarter we hit 200% of target, bonuses are coming.",
+      "twist": "The only account that got the transfer is my savings jar labeled 'future office'.",
+      "language": "en",
+      "video_id": "20261128-043520-en-salary-and-payday",
+      "created": "2026-11-28T06:00+05:30"
     }
   ],
   "backlog": [
@@ -183,23 +192,6 @@
         "relatable": 6,
         "originality": 6,
         "visual": 7,
-        "twist": 6
-      },
-      "language": null,
-      "added": "2026-11-26T21:14+05:30"
-    },
-    {
-      "canonical_en": "He announces a massive bonus then checks his empty bank app",
-      "category": "salary and payday",
-      "hook": "This quarter we hit 200% of target, bonuses are coming.",
-      "setup": "I just transferred the profit share to every employee's account.",
-      "twist": "The only account that got the transfer is my savings jar labeled 'future office'.",
-      "visual_gag": "CEO looking at phone notification $0, jar of coins on desk",
-      "scores": {
-        "funny": 6,
-        "relatable": 7,
-        "originality": 6,
-        "visual": 6,
         "twist": 6
       },
       "language": null,

@@ -32,7 +32,7 @@
         "ig_saves": 0,
         "ig_avg_watch_ms": 0
       },
-      "last_update": "2026-11-27T04:37+05:30",
+      "last_update": "2026-11-28T04:35+05:30",
       "views": {
         "ig": 0
       }
@@ -69,7 +69,7 @@
         "ig_saves": 0,
         "ig_avg_watch_ms": 0
       },
-      "last_update": "2026-11-27T04:37+05:30",
+      "last_update": "2026-11-28T04:35+05:30",
       "views": {
         "ig": 0
       }
@@ -105,7 +105,7 @@
         "ig_saves": 0,
         "ig_avg_watch_ms": 0
       },
-      "last_update": "2026-11-27T04:37+05:30",
+      "last_update": "2026-11-28T04:35+05:30",
       "views": {
         "ig": 0
       }
@@ -141,11 +141,266 @@
         "ig_saves": 0,
         "ig_avg_watch_ms": 0
       },
-      "last_update": "2026-11-27T04:37+05:30",
+      "last_update": "2026-11-28T04:35+05:30",
+      "views": {
+        "ig": 0
+      }
+    },
+    "20261127-013625-en-product-launch": {
+      "video_id": "20261127-013625-en-product-launch",
+      "language": "en",
+      "topic": "product launch",
+      "format": "ceo",
+      "title": "AI‑Toast: The Future of Breakfast 🍞",
+      "category": "product launch",
+      "hook_line": "Launching our AIdriven platform that will automate every task.",
+      "look": {
+        "main": "street",
+        "main_mood": "night",
+        "music_style": "lofi",
+        "accent": "#FFD400",
+        "locations": [
+          "street",
+          "apartment",
+          "boardroom"
+        ]
+      },
+      "critic_score": 7.0,
+      "studio_score": 6.0,
+      "duration": 18.45,
+      "published_at": "2026-11-27T08:12+05:30",
+      "metrics": {
+        "ig_views": 0,
+        "ig_reach": 0,
+        "ig_likes": 0,
+        "ig_comments": 0,
+        "ig_shares": 0,
+        "ig_saves": 0,
+        "ig_avg_watch_ms": 0
+      },
+      "last_update": "2026-11-28T04:35+05:30",
+      "views": {
+        "ig": 0
+      }
+    },
+    "20261127-030123-en-product-launch": {
+      "video_id": "20261127-030123-en-product-launch",
+      "language": "en",
+      "topic": "product launch",
+      "format": "ceo",
+      "title": "AI‑Toast: The Future of Breakfast 🚀",
+      "category": "product launch",
+      "hook_line": "I built an AI platform that runs breakfast while I sleep.",
+      "look": {
+        "main": "apartment",
+        "main_mood": "night",
+        "music_style": "keys",
+        "accent": "#5CE1FF",
+        "locations": [
+          "apartment",
+          "cafe",
+          "nook"
+        ]
+      },
+      "critic_score": 7.0,
+      "studio_score": 5.9,
+      "duration": 18.84,
+      "published_at": "2026-11-27T14:18+05:30",
+      "metrics": {
+        "ig_views": 0,
+        "ig_reach": 0,
+        "ig_likes": 0,
+        "ig_comments": 0,
+        "ig_shares": 0,
+        "ig_saves": 0,
+        "ig_avg_watch_ms": 0
+      },
+      "last_update": "2026-11-28T04:35+05:30",
+      "views": {
+        "ig": 0
+      }
+    },
+    "20261127-043802-hi-team-hiring": {
+      "video_id": "20261127-043802-hi-team-hiring",
+      "language": "hi",
+      "topic": "team hiring",
+      "format": "ceo",
+      "title": "Hiring Pivot Talent? 🐔",
+      "category": "team and hiring",
+      "hook_line": "hum hiring kar rahe hain top talent, jo market se bhi tez pivot kar sake",
+      "look": {
+        "main": "nook",
+        "main_mood": "rain",
+        "music_style": "corporate",
+        "accent": "#FFD400",
+        "locations": [
+          "nook",
+          "cafe"
+        ]
+      },
+      "critic_score": 6.0,
+      "studio_score": 5.5,
+      "duration": 33.05,
+      "published_at": "2026-11-27T11:10+05:30",
+      "metrics": {
+        "ig_views": 0,
+        "ig_reach": 0,
+        "ig_likes": 0,
+        "ig_comments": 0,
+        "ig_shares": 0,
+        "ig_saves": 0,
+        "ig_avg_watch_ms": 0
+      },
+      "last_update": "2026-11-28T04:35+05:30",
+      "views": {
+        "ig": 0
+      }
+    },
+    "20261127-130121-hi-product-launch": {
+      "video_id": "20261127-130121-hi-product-launch",
+      "language": "hi",
+      "topic": "product launch",
+      "format": "ceo",
+      "title": "Beta Launch ka Big Reveal 🚀",
+      "category": "product launch",
+      "hook_line": "main paanch baje uthta hoon kyunki empire khud nahin bante",
+      "look": {
+        "main": "boardroom",
+        "main_mood": "morning",
+        "music_style": "funk",
+        "accent": "#FFD400",
+        "locations": [
+          "boardroom",
+          "cafe"
+        ]
+      },
+      "critic_score": 7.0,
+      "studio_score": 6.0,
+      "duration": 27.52,
+      "published_at": "2026-11-27T17:01+05:30",
+      "metrics": {
+        "ig_views": 0,
+        "ig_reach": 0,
+        "ig_likes": 0,
+        "ig_comments": 0,
+        "ig_shares": 0,
+        "ig_saves": 0,
+        "ig_avg_watch_ms": 0
+      },
+      "last_update": "2026-11-28T04:35+05:30",
+      "views": {
+        "ig": 0
+      }
+    },
+    "20261127-145603-hi-product-launch": {
+      "video_id": "20261127-145603-hi-product-launch",
+      "language": "hi",
+      "topic": "product launch",
+      "format": "ceo",
+      "title": "Beta Launch Ka Big Reveal 🚀",
+      "category": "product launch",
+      "hook_line": "main paanch baje uthta hoon, kyunki empire ko mere sleeping time ki parwah nahi",
+      "look": {
+        "main": "street",
+        "main_mood": "golden",
+        "music_style": "suspense",
+        "accent": "#FFD400",
+        "locations": [
+          "street",
+          "boardroom"
+        ]
+      },
+      "critic_score": 7.0,
+      "studio_score": 6.0,
+      "duration": 29.01,
+      "published_at": "2026-11-27T23:29+05:30",
+      "metrics": {
+        "ig_views": 0,
+        "ig_reach": 0,
+        "ig_likes": 0,
+        "ig_comments": 0,
+        "ig_shares": 0,
+        "ig_saves": 0,
+        "ig_avg_watch_ms": 0
+      },
+      "last_update": "2026-11-28T04:35+05:30",
+      "views": {
+        "ig": 0
+      }
+    },
+    "20261127-172610-en-office": {
+      "video_id": "20261127-172610-en-office",
+      "language": "en",
+      "topic": "office",
+      "format": "ceo",
+      "title": "CEO Views: Skyline or Laundry? 🧺",
+      "category": "the office",
+      "hook_line": "My office commands a 360-degree view of the city’s skyline—where every window is a new market.",
+      "look": {
+        "main": "street",
+        "main_mood": "golden",
+        "music_style": "lofi",
+        "accent": "#FFD400",
+        "locations": [
+          "street",
+          "nook",
+          "apartment"
+        ]
+      },
+      "critic_score": 7.0,
+      "studio_score": 7.0,
+      "duration": 26.67,
+      "published_at": "2026-11-27T19:55+05:30",
+      "metrics": {
+        "ig_views": 0,
+        "ig_reach": 0,
+        "ig_likes": 0,
+        "ig_comments": 0,
+        "ig_shares": 0,
+        "ig_saves": 0,
+        "ig_avg_watch_ms": 0
+      },
+      "last_update": "2026-11-28T04:35+05:30",
+      "views": {
+        "ig": 0
+      }
+    },
+    "20261127-192633-en-office-view": {
+      "video_id": "20261127-192633-en-office-view",
+      "language": "en",
+      "topic": "office view",
+      "format": "ceo",
+      "title": "CEO's 5‑Star View… From the Laundry Room 🧺",
+      "category": "the office",
+      "hook_line": "I run a 10floor empire from a window that kisses the skyline.",
+      "look": {
+        "main": "cafe",
+        "main_mood": "evening",
+        "music_style": "corporate",
+        "accent": "#5CE1FF",
+        "locations": [
+          "cafe",
+          "apartment"
+        ]
+      },
+      "critic_score": 7.0,
+      "studio_score": 7.0,
+      "duration": 21.67,
+      "published_at": "2026-11-28T01:34+05:30",
+      "metrics": {
+        "ig_views": 0,
+        "ig_reach": 0,
+        "ig_likes": 0,
+        "ig_comments": 0,
+        "ig_shares": 0,
+        "ig_saves": 0,
+        "ig_avg_watch_ms": 0
+      },
+      "last_update": "2026-11-28T04:35+05:30",
       "views": {
         "ig": 0
       }
     }
   },
-  "updated": "2026-11-27T04:37+05:30"
+  "updated": "2026-11-28T04:35+05:30"
 }
