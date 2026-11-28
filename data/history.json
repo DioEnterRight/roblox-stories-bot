@@ -531,6 +531,32 @@
       "tag": "vid-20261128-162010-en-linkedin-flex",
       "status": "queued",
       "created": "2026-11-28T17:28+05:30"
+    },
+    {
+      "id": "20261128-173039-en-linkedin-flex",
+      "title": "Live partnership reveal ends on a napkin 📈",
+      "topic": "LinkedIn flex",
+      "canonical_en": "He posts a glossy LinkedIn update while his laptop battery is at 2%",
+      "language": "en",
+      "format": "ceo",
+      "category": "social media flexing",
+      "hook_line": "Just closed a partnership that will double our ARR.",
+      "duration": 21.27,
+      "look": {
+        "main": "street",
+        "main_mood": "rain",
+        "music_style": "suspense",
+        "accent": "#FF9D2E",
+        "locations": [
+          "street",
+          "cafe"
+        ]
+      },
+      "critic_score": 6.0,
+      "studio_score": 6.5,
+      "tag": "vid-20261128-173039-en-linkedin-flex",
+      "status": "queued",
+      "created": "2026-11-28T19:20+05:30"
     }
   ],
   "missed_slots": [
