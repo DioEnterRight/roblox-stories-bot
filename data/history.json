@@ -402,8 +402,13 @@
       "critic_score": 6.0,
       "studio_score": 6.0,
       "tag": "vid-20261128-023451-hi-meetings",
-      "status": "queued",
-      "created": "2026-11-28T04:33+05:30"
+      "status": "published",
+      "created": "2026-11-28T04:33+05:30",
+      "slot": "2026-11-28 10:30",
+      "ig_media_id": "17869491342675541",
+      "ig_link": "https://www.instagram.com/reel/DgRkP-wSY5l/",
+      "ig_state": "posted",
+      "published_at": "2026-11-28T11:33+05:30"
     },
     {
       "id": "20261128-043520-en-salary-and-payday",
