@@ -430,6 +430,33 @@
       "tag": "vid-20261128-043520-en-salary-and-payday",
       "status": "queued",
       "created": "2026-11-28T06:00+05:30"
+    },
+    {
+      "id": "20261128-060202-en-salary-and-payday",
+      "title": "CEO's Empty Bonus Bonanza 💸",
+      "topic": "salary and payday",
+      "canonical_en": "He announces a massive bonus then checks his empty bank app",
+      "language": "en",
+      "format": "ceo",
+      "category": "salary and payday",
+      "hook_line": "I just closed a two hundred million dollar deal before breakfast.",
+      "duration": 19.84,
+      "look": {
+        "main": "cafe",
+        "main_mood": "morning",
+        "music_style": "lofi",
+        "accent": "#FFD400",
+        "locations": [
+          "cafe",
+          "nook",
+          "boardroom"
+        ]
+      },
+      "critic_score": 6.0,
+      "studio_score": 6.0,
+      "tag": "vid-20261128-060202-en-salary-and-payday",
+      "status": "queued",
+      "created": "2026-11-28T07:22+05:30"
     }
   ],
   "missed_slots": [
