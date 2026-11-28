@@ -529,8 +529,13 @@
       "critic_score": 7.0,
       "studio_score": 6.0,
       "tag": "vid-20261128-162010-en-linkedin-flex",
-      "status": "queued",
-      "created": "2026-11-28T17:28+05:30"
+      "status": "published",
+      "created": "2026-11-28T17:28+05:30",
+      "slot": "2026-11-28 19:30",
+      "ig_media_id": "18102070271691116",
+      "ig_link": "https://www.instagram.com/reel/DgShKafsX-6/",
+      "ig_state": "posted",
+      "published_at": "2026-11-28T20:26+05:30"
     },
     {
       "id": "20261128-173039-en-linkedin-flex",
