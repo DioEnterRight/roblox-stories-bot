@@ -504,6 +504,33 @@
       "ig_link": "https://www.instagram.com/reel/DgSJfXYoLUj/",
       "ig_state": "posted",
       "published_at": "2026-11-28T16:59+05:30"
+    },
+    {
+      "id": "20261128-162010-en-linkedin-flex",
+      "title": "Live‑Streamed Partnership Flex 📈",
+      "topic": "LinkedIn Flex",
+      "canonical_en": "He posts a glossy LinkedIn update while his laptop battery is at 2%",
+      "language": "en",
+      "format": "ceo",
+      "category": "social media flexing",
+      "hook_line": "Just closed a partnership that will double our ARR.",
+      "duration": 17.88,
+      "look": {
+        "main": "nook",
+        "main_mood": "rain",
+        "music_style": "suspense",
+        "accent": "#FFD400",
+        "locations": [
+          "nook",
+          "cafe",
+          "boardroom"
+        ]
+      },
+      "critic_score": 7.0,
+      "studio_score": 6.0,
+      "tag": "vid-20261128-162010-en-linkedin-flex",
+      "status": "queued",
+      "created": "2026-11-28T17:28+05:30"
     }
   ],
   "missed_slots": [

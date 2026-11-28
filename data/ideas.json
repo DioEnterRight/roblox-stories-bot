@@ -144,6 +144,15 @@
       "language": "hi",
       "video_id": "20261128-114028-hi-social-media-flexing",
       "created": "2026-11-28T13:43+05:30"
+    },
+    {
+      "canonical_en": "He posts a glossy LinkedIn update while his laptop battery is at 2%",
+      "category": "social media flexing",
+      "hook": "Just closed a partnership that will double our ARR.",
+      "twist": "The ‘growth chart’ is a hand‑drawn doodle on a napkin.",
+      "language": "en",
+      "video_id": "20261128-162010-en-linkedin-flex",
+      "created": "2026-11-28T17:28+05:30"
     }
   ],
   "backlog": [
@@ -228,23 +237,6 @@
         "originality": 6,
         "visual": 6,
         "twist": 6
-      },
-      "language": null,
-      "added": "2026-11-26T21:14+05:30"
-    },
-    {
-      "canonical_en": "He posts a glossy LinkedIn update while his laptop battery is at 2%",
-      "category": "social media flexing",
-      "hook": "Just closed a partnership that will double our ARR.",
-      "setup": "I’m live‑streaming the announcement to 10k followers, all eyes on the growth chart.",
-      "twist": "The ‘growth chart’ is a hand‑drawn doodle on a napkin.",
-      "visual_gag": "Phone showing livestream, messy bedroom background, chart is a stick figure",
-      "scores": {
-        "funny": 6,
-        "relatable": 6,
-        "originality": 5,
-        "visual": 7,
-        "twist": 5
       },
       "language": null,
       "added": "2026-11-26T21:14+05:30"
