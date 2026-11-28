@@ -135,26 +135,18 @@
       "language": "en",
       "video_id": "20261128-060202-en-salary-and-payday",
       "created": "2026-11-28T07:22+05:30"
-    }
-  ],
-  "backlog": [
+    },
     {
       "canonical_en": "He claims his follower count is soaring, but the screen shows 0 likes.",
       "category": "social media flexing",
       "hook": "My LinkedIn followers exploded overnight—thousands of CEOs follow me.",
-      "setup": "Talking about viral LinkedIn growth.",
       "twist": "My latest post has zero likes and zero comments.",
-      "visual_gag": "Phone screen with LinkedIn post showing 0 likes.",
-      "scores": {
-        "funny": 6,
-        "relatable": 5,
-        "originality": 6,
-        "visual": 6,
-        "twist": 6
-      },
-      "language": null,
-      "added": "2026-11-26T19:11+05:30"
-    },
+      "language": "hi",
+      "video_id": "20261128-114028-hi-social-media-flexing",
+      "created": "2026-11-28T13:43+05:30"
+    }
+  ],
+  "backlog": [
     {
       "canonical_en": "He boasts about payroll automation, but his paycheck is a doodle of a dollar sign.",
       "category": "salary and payday",

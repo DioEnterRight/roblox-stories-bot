@@ -467,6 +467,33 @@
       "tag": "vid-20261128-060202-en-salary-and-payday",
       "status": "queued",
       "created": "2026-11-28T07:22+05:30"
+    },
+    {
+      "id": "20261128-114028-hi-social-media-flexing",
+      "title": "LinkedIn Followers Ka Jadoo 🚀",
+      "topic": "social media flexing",
+      "canonical_en": "He claims his follower count is soaring, but the screen shows 0 likes.",
+      "language": "hi",
+      "format": "ceo",
+      "category": "social media flexing",
+      "hook_line": "main paanch baje uthta hoon kyunki empire khud nahi bante",
+      "duration": 30.93,
+      "look": {
+        "main": "boardroom",
+        "main_mood": "evening",
+        "music_style": "corporate",
+        "accent": "#FFD400",
+        "locations": [
+          "boardroom",
+          "street",
+          "nook"
+        ]
+      },
+      "critic_score": 7.0,
+      "studio_score": 5.9,
+      "tag": "vid-20261128-114028-hi-social-media-flexing",
+      "status": "queued",
+      "created": "2026-11-28T13:43+05:30"
     }
   ],
   "missed_slots": [
